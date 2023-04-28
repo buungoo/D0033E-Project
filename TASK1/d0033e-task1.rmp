@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><process version="9.10.013">
+<?xml version="1.0" encoding="UTF-8"?><process version="10.1.002">
   <context>
     <input/>
     <output/>
     <macros/>
   </context>
-  <operator activated="true" class="process" compatibility="9.10.013" expanded="true" name="Process">
+  <operator activated="true" class="process" compatibility="10.1.002" expanded="true" name="Process">
     <parameter key="logverbosity" value="init"/>
     <parameter key="random_seed" value="2001"/>
     <parameter key="send_mail" value="never"/>
@@ -12,8 +12,8 @@
     <parameter key="process_duration_for_mail" value="30"/>
     <parameter key="encoding" value="SYSTEM"/>
     <process expanded="true">
-      <operator activated="true" class="read_csv" compatibility="9.10.013" expanded="true" height="68" name="Read CSV" width="90" x="45" y="187">
-        <parameter key="csv_file" value="C:\Users\holms\Downloads\train-final.csv"/>
+      <operator activated="true" class="read_csv" compatibility="10.1.002" expanded="true" height="68" name="Read CSV" width="90" x="45" y="136">
+        <parameter key="csv_file" value="C:\Users\2001a\Documents\SKOOL\D0033E\D0033E-Project\TASK1\train-final.csv"/>
         <parameter key="column_separators" value=","/>
         <parameter key="trim_lines" value="false"/>
         <parameter key="use_quotes" value="true"/>
@@ -28,280 +28,277 @@
         <parameter key="grouping_character" value=","/>
         <parameter key="infinity_representation" value=""/>
         <parameter key="date_format" value=""/>
-        <parameter key="first_row_as_names" value="false"/>
+        <parameter key="first_row_as_names" value="true"/>
         <list key="annotations"/>
         <parameter key="time_zone" value="SYSTEM"/>
         <parameter key="locale" value="English (United States)"/>
         <parameter key="encoding" value="windows-1252"/>
         <parameter key="read_all_values_as_polynominal" value="false"/>
         <list key="data_set_meta_data_information">
-          <parameter key="0" value="att1.true.real.attribute"/>
-          <parameter key="1" value="att2.true.real.attribute"/>
-          <parameter key="2" value="att3.true.real.attribute"/>
-          <parameter key="3" value="att4.true.real.attribute"/>
-          <parameter key="4" value="att5.true.real.attribute"/>
-          <parameter key="5" value="att6.true.real.attribute"/>
-          <parameter key="6" value="att7.true.real.attribute"/>
-          <parameter key="7" value="att8.true.real.attribute"/>
-          <parameter key="8" value="att9.true.real.attribute"/>
-          <parameter key="9" value="att10.true.real.attribute"/>
-          <parameter key="10" value="att11.true.real.attribute"/>
-          <parameter key="11" value="att12.true.real.attribute"/>
-          <parameter key="12" value="att13.true.real.attribute"/>
-          <parameter key="13" value="att14.true.real.attribute"/>
-          <parameter key="14" value="att15.true.real.attribute"/>
-          <parameter key="15" value="att16.true.real.attribute"/>
-          <parameter key="16" value="att17.true.real.attribute"/>
-          <parameter key="17" value="att18.true.real.attribute"/>
-          <parameter key="18" value="att19.true.real.attribute"/>
-          <parameter key="19" value="att20.true.real.attribute"/>
-          <parameter key="20" value="att21.true.real.attribute"/>
-          <parameter key="21" value="att22.true.real.attribute"/>
-          <parameter key="22" value="att23.true.real.attribute"/>
-          <parameter key="23" value="att24.true.real.attribute"/>
-          <parameter key="24" value="att25.true.real.attribute"/>
-          <parameter key="25" value="att26.true.real.attribute"/>
-          <parameter key="26" value="att27.true.real.attribute"/>
-          <parameter key="27" value="att28.true.real.attribute"/>
-          <parameter key="28" value="att29.true.real.attribute"/>
-          <parameter key="29" value="att30.true.real.attribute"/>
-          <parameter key="30" value="att31.true.real.attribute"/>
-          <parameter key="31" value="att32.true.real.attribute"/>
-          <parameter key="32" value="att33.true.real.attribute"/>
-          <parameter key="33" value="att34.true.real.attribute"/>
-          <parameter key="34" value="att35.true.real.attribute"/>
-          <parameter key="35" value="att36.true.real.attribute"/>
-          <parameter key="36" value="att37.true.real.attribute"/>
-          <parameter key="37" value="att38.true.real.attribute"/>
-          <parameter key="38" value="att39.true.real.attribute"/>
-          <parameter key="39" value="att40.true.real.attribute"/>
-          <parameter key="40" value="att41.true.real.attribute"/>
-          <parameter key="41" value="att42.true.real.attribute"/>
-          <parameter key="42" value="att43.true.real.attribute"/>
-          <parameter key="43" value="att44.true.real.attribute"/>
-          <parameter key="44" value="att45.true.real.attribute"/>
-          <parameter key="45" value="att46.true.real.attribute"/>
-          <parameter key="46" value="att47.true.real.attribute"/>
-          <parameter key="47" value="att48.true.real.attribute"/>
-          <parameter key="48" value="att49.true.real.attribute"/>
-          <parameter key="49" value="att50.true.real.attribute"/>
-          <parameter key="50" value="att51.true.real.attribute"/>
-          <parameter key="51" value="att52.true.real.attribute"/>
-          <parameter key="52" value="att53.true.real.attribute"/>
-          <parameter key="53" value="att54.true.real.attribute"/>
-          <parameter key="54" value="att55.true.real.attribute"/>
-          <parameter key="55" value="att56.true.real.attribute"/>
-          <parameter key="56" value="att57.true.real.attribute"/>
-          <parameter key="57" value="att58.true.real.attribute"/>
-          <parameter key="58" value="att59.true.real.attribute"/>
-          <parameter key="59" value="att60.true.real.attribute"/>
-          <parameter key="60" value="att61.true.real.attribute"/>
-          <parameter key="61" value="att62.true.real.attribute"/>
-          <parameter key="62" value="att63.true.real.attribute"/>
-          <parameter key="63" value="att64.true.real.attribute"/>
-          <parameter key="64" value="att65.true.real.attribute"/>
-          <parameter key="65" value="att66.true.real.attribute"/>
-          <parameter key="66" value="att67.true.real.attribute"/>
-          <parameter key="67" value="att68.true.real.attribute"/>
-          <parameter key="68" value="att69.true.real.attribute"/>
-          <parameter key="69" value="att70.true.real.attribute"/>
-          <parameter key="70" value="att71.true.real.attribute"/>
-          <parameter key="71" value="att72.true.real.attribute"/>
-          <parameter key="72" value="att73.true.real.attribute"/>
-          <parameter key="73" value="att74.true.real.attribute"/>
-          <parameter key="74" value="att75.true.real.attribute"/>
-          <parameter key="75" value="att76.true.real.attribute"/>
-          <parameter key="76" value="att77.true.real.attribute"/>
-          <parameter key="77" value="att78.true.real.attribute"/>
-          <parameter key="78" value="att79.true.real.attribute"/>
-          <parameter key="79" value="att80.true.real.attribute"/>
-          <parameter key="80" value="att81.true.real.attribute"/>
-          <parameter key="81" value="att82.true.real.attribute"/>
-          <parameter key="82" value="att83.true.real.attribute"/>
-          <parameter key="83" value="att84.true.real.attribute"/>
-          <parameter key="84" value="att85.true.real.attribute"/>
-          <parameter key="85" value="att86.true.real.attribute"/>
-          <parameter key="86" value="att87.true.real.attribute"/>
-          <parameter key="87" value="att88.true.real.attribute"/>
-          <parameter key="88" value="att89.true.real.attribute"/>
-          <parameter key="89" value="att90.true.real.attribute"/>
-          <parameter key="90" value="att91.true.real.attribute"/>
-          <parameter key="91" value="att92.true.real.attribute"/>
-          <parameter key="92" value="att93.true.real.attribute"/>
-          <parameter key="93" value="att94.true.real.attribute"/>
-          <parameter key="94" value="att95.true.real.attribute"/>
-          <parameter key="95" value="att96.true.real.attribute"/>
-          <parameter key="96" value="att97.true.real.attribute"/>
-          <parameter key="97" value="att98.true.real.attribute"/>
-          <parameter key="98" value="att99.true.real.attribute"/>
-          <parameter key="99" value="att100.true.real.attribute"/>
-          <parameter key="100" value="att101.true.real.attribute"/>
-          <parameter key="101" value="att102.true.real.attribute"/>
-          <parameter key="102" value="att103.true.real.attribute"/>
-          <parameter key="103" value="att104.true.real.attribute"/>
-          <parameter key="104" value="att105.true.real.attribute"/>
-          <parameter key="105" value="att106.true.real.attribute"/>
-          <parameter key="106" value="att107.true.real.attribute"/>
-          <parameter key="107" value="att108.true.real.attribute"/>
-          <parameter key="108" value="att109.true.real.attribute"/>
-          <parameter key="109" value="att110.true.real.attribute"/>
-          <parameter key="110" value="att111.true.real.attribute"/>
-          <parameter key="111" value="att112.true.real.attribute"/>
-          <parameter key="112" value="att113.true.real.attribute"/>
-          <parameter key="113" value="att114.true.real.attribute"/>
-          <parameter key="114" value="att115.true.real.attribute"/>
-          <parameter key="115" value="att116.true.real.attribute"/>
-          <parameter key="116" value="att117.true.real.attribute"/>
-          <parameter key="117" value="att118.true.real.attribute"/>
-          <parameter key="118" value="att119.true.real.attribute"/>
-          <parameter key="119" value="att120.true.real.attribute"/>
-          <parameter key="120" value="att121.true.real.attribute"/>
-          <parameter key="121" value="att122.true.real.attribute"/>
-          <parameter key="122" value="att123.true.real.attribute"/>
-          <parameter key="123" value="att124.true.real.attribute"/>
-          <parameter key="124" value="att125.true.real.attribute"/>
-          <parameter key="125" value="att126.true.real.attribute"/>
-          <parameter key="126" value="att127.true.real.attribute"/>
-          <parameter key="127" value="att128.true.real.attribute"/>
-          <parameter key="128" value="att129.true.real.attribute"/>
-          <parameter key="129" value="att130.true.real.attribute"/>
-          <parameter key="130" value="att131.true.real.attribute"/>
-          <parameter key="131" value="att132.true.real.attribute"/>
-          <parameter key="132" value="att133.true.real.attribute"/>
-          <parameter key="133" value="att134.true.real.attribute"/>
-          <parameter key="134" value="att135.true.real.attribute"/>
-          <parameter key="135" value="att136.true.real.attribute"/>
-          <parameter key="136" value="att137.true.real.attribute"/>
-          <parameter key="137" value="att138.true.real.attribute"/>
-          <parameter key="138" value="att139.true.real.attribute"/>
-          <parameter key="139" value="att140.true.real.attribute"/>
-          <parameter key="140" value="att141.true.real.attribute"/>
-          <parameter key="141" value="att142.true.real.attribute"/>
-          <parameter key="142" value="att143.true.real.attribute"/>
-          <parameter key="143" value="att144.true.real.attribute"/>
-          <parameter key="144" value="att145.true.real.attribute"/>
-          <parameter key="145" value="att146.true.real.attribute"/>
-          <parameter key="146" value="att147.true.real.attribute"/>
-          <parameter key="147" value="att148.true.real.attribute"/>
-          <parameter key="148" value="att149.true.real.attribute"/>
-          <parameter key="149" value="att150.true.real.attribute"/>
-          <parameter key="150" value="att151.true.real.attribute"/>
-          <parameter key="151" value="att152.true.real.attribute"/>
-          <parameter key="152" value="att153.true.real.attribute"/>
-          <parameter key="153" value="att154.true.real.attribute"/>
-          <parameter key="154" value="att155.true.real.attribute"/>
-          <parameter key="155" value="att156.true.real.attribute"/>
-          <parameter key="156" value="att157.true.real.attribute"/>
-          <parameter key="157" value="att158.true.real.attribute"/>
-          <parameter key="158" value="att159.true.real.attribute"/>
-          <parameter key="159" value="att160.true.real.attribute"/>
-          <parameter key="160" value="att161.true.real.attribute"/>
-          <parameter key="161" value="att162.true.real.attribute"/>
-          <parameter key="162" value="att163.true.real.attribute"/>
-          <parameter key="163" value="att164.true.real.attribute"/>
-          <parameter key="164" value="att165.true.real.attribute"/>
-          <parameter key="165" value="att166.true.real.attribute"/>
-          <parameter key="166" value="att167.true.real.attribute"/>
-          <parameter key="167" value="att168.true.real.attribute"/>
-          <parameter key="168" value="att169.true.real.attribute"/>
-          <parameter key="169" value="att170.true.real.attribute"/>
-          <parameter key="170" value="att171.true.real.attribute"/>
-          <parameter key="171" value="att172.true.real.attribute"/>
-          <parameter key="172" value="att173.true.real.attribute"/>
-          <parameter key="173" value="att174.true.real.attribute"/>
-          <parameter key="174" value="att175.true.real.attribute"/>
-          <parameter key="175" value="att176.true.real.attribute"/>
-          <parameter key="176" value="att177.true.real.attribute"/>
-          <parameter key="177" value="att178.true.real.attribute"/>
-          <parameter key="178" value="att179.true.real.attribute"/>
-          <parameter key="179" value="att180.true.real.attribute"/>
-          <parameter key="180" value="att181.true.real.attribute"/>
-          <parameter key="181" value="att182.true.real.attribute"/>
-          <parameter key="182" value="att183.true.real.attribute"/>
-          <parameter key="183" value="att184.true.real.attribute"/>
-          <parameter key="184" value="att185.true.real.attribute"/>
-          <parameter key="185" value="att186.true.real.attribute"/>
-          <parameter key="186" value="att187.true.real.attribute"/>
-          <parameter key="187" value="att188.true.real.attribute"/>
-          <parameter key="188" value="att189.true.real.attribute"/>
-          <parameter key="189" value="att190.true.real.attribute"/>
-          <parameter key="190" value="att191.true.real.attribute"/>
-          <parameter key="191" value="att192.true.real.attribute"/>
-          <parameter key="192" value="att193.true.real.attribute"/>
-          <parameter key="193" value="att194.true.real.attribute"/>
-          <parameter key="194" value="att195.true.real.attribute"/>
-          <parameter key="195" value="att196.true.real.attribute"/>
-          <parameter key="196" value="att197.true.real.attribute"/>
-          <parameter key="197" value="att198.true.real.attribute"/>
-          <parameter key="198" value="att199.true.real.attribute"/>
-          <parameter key="199" value="att200.true.real.attribute"/>
-          <parameter key="200" value="att201.true.real.attribute"/>
-          <parameter key="201" value="att202.true.real.attribute"/>
-          <parameter key="202" value="att203.true.real.attribute"/>
-          <parameter key="203" value="att204.true.real.attribute"/>
-          <parameter key="204" value="att205.true.real.attribute"/>
-          <parameter key="205" value="att206.true.real.attribute"/>
-          <parameter key="206" value="att207.true.real.attribute"/>
-          <parameter key="207" value="att208.true.real.attribute"/>
-          <parameter key="208" value="att209.true.real.attribute"/>
-          <parameter key="209" value="att210.true.real.attribute"/>
-          <parameter key="210" value="att211.true.real.attribute"/>
-          <parameter key="211" value="att212.true.real.attribute"/>
-          <parameter key="212" value="att213.true.real.attribute"/>
-          <parameter key="213" value="att214.true.real.attribute"/>
-          <parameter key="214" value="att215.true.real.attribute"/>
-          <parameter key="215" value="att216.true.real.attribute"/>
-          <parameter key="216" value="att217.true.real.attribute"/>
-          <parameter key="217" value="att218.true.real.attribute"/>
-          <parameter key="218" value="att219.true.real.attribute"/>
-          <parameter key="219" value="att220.true.real.attribute"/>
-          <parameter key="220" value="att221.true.real.attribute"/>
-          <parameter key="221" value="att222.true.real.attribute"/>
-          <parameter key="222" value="att223.true.real.attribute"/>
-          <parameter key="223" value="att224.true.real.attribute"/>
-          <parameter key="224" value="att225.true.real.attribute"/>
-          <parameter key="225" value="att226.true.real.attribute"/>
-          <parameter key="226" value="att227.true.real.attribute"/>
-          <parameter key="227" value="att228.true.real.attribute"/>
-          <parameter key="228" value="att229.true.real.attribute"/>
-          <parameter key="229" value="att230.true.real.attribute"/>
-          <parameter key="230" value="att231.true.real.attribute"/>
-          <parameter key="231" value="att232.true.real.attribute"/>
-          <parameter key="232" value="att233.true.real.attribute"/>
-          <parameter key="233" value="att234.true.real.attribute"/>
-          <parameter key="234" value="att235.true.real.attribute"/>
-          <parameter key="235" value="att236.true.real.attribute"/>
-          <parameter key="236" value="att237.true.real.attribute"/>
-          <parameter key="237" value="att238.true.real.attribute"/>
-          <parameter key="238" value="att239.true.real.attribute"/>
-          <parameter key="239" value="att240.true.real.attribute"/>
-          <parameter key="240" value="ges.true.polynominal.attribute"/>
-          <parameter key="241" value="gesID.true.integer.attribute"/>
+          <parameter key="0" value="Head x.true.real.attribute"/>
+          <parameter key="1" value="Head y.true.real.attribute"/>
+          <parameter key="2" value="Head z.true.real.attribute"/>
+          <parameter key="3" value="Shoulder_Center x.true.real.attribute"/>
+          <parameter key="4" value="Shoulder_Center y.true.real.attribute"/>
+          <parameter key="5" value="Shoulder_Center z.true.real.attribute"/>
+          <parameter key="6" value="Shoulder_Left x.true.real.attribute"/>
+          <parameter key="7" value="Shoulder_Left y.true.real.attribute"/>
+          <parameter key="8" value="Shoulder_Left z.true.real.attribute"/>
+          <parameter key="9" value="Shoulder_Right x.true.real.attribute"/>
+          <parameter key="10" value="Shoulder_Right y.true.real.attribute"/>
+          <parameter key="11" value="Shoulder_Right z.true.real.attribute"/>
+          <parameter key="12" value="Elbow_Left x.true.real.attribute"/>
+          <parameter key="13" value="Elbow_Left y.true.real.attribute"/>
+          <parameter key="14" value="Elbow_Left z.true.real.attribute"/>
+          <parameter key="15" value="Elbow_Right x.true.real.attribute"/>
+          <parameter key="16" value="Elbow_Right y.true.real.attribute"/>
+          <parameter key="17" value="Elbow_Right z.true.real.attribute"/>
+          <parameter key="18" value="Wrist_Left x.true.real.attribute"/>
+          <parameter key="19" value="Wrist_Left y.true.real.attribute"/>
+          <parameter key="20" value="Wrist_Left z.true.real.attribute"/>
+          <parameter key="21" value="Wrist_Right x.true.real.attribute"/>
+          <parameter key="22" value="Wrist_Right y.true.real.attribute"/>
+          <parameter key="23" value="Wrist_Right z.true.real.attribute"/>
+          <parameter key="24" value="Hand_Left x.true.real.attribute"/>
+          <parameter key="25" value="Hand_Left y.true.real.attribute"/>
+          <parameter key="26" value="Hand_Left z.true.real.attribute"/>
+          <parameter key="27" value="Hand_Right x.true.real.attribute"/>
+          <parameter key="28" value="Hand_Right y.true.real.attribute"/>
+          <parameter key="29" value="Hand_Right z.true.real.attribute"/>
+          <parameter key="30" value="Spine x.true.real.attribute"/>
+          <parameter key="31" value="Spine y.true.real.attribute"/>
+          <parameter key="32" value="Spine z.true.real.attribute"/>
+          <parameter key="33" value="Hip_Center x.true.real.attribute"/>
+          <parameter key="34" value="Hip_Center y.true.real.attribute"/>
+          <parameter key="35" value="Hip_Center z.true.real.attribute"/>
+          <parameter key="36" value="Hip_Left x.true.real.attribute"/>
+          <parameter key="37" value="Hip_Left y.true.real.attribute"/>
+          <parameter key="38" value="Hip_Left z.true.real.attribute"/>
+          <parameter key="39" value="Hip_Right x.true.real.attribute"/>
+          <parameter key="40" value="Hip_Right y.true.real.attribute"/>
+          <parameter key="41" value="Hip_Right z.true.real.attribute"/>
+          <parameter key="42" value="Knee_Left x.true.real.attribute"/>
+          <parameter key="43" value="Knee_Left y.true.real.attribute"/>
+          <parameter key="44" value="Knee_Left z.true.real.attribute"/>
+          <parameter key="45" value="Knee_Right x.true.real.attribute"/>
+          <parameter key="46" value="Knee_Right y.true.real.attribute"/>
+          <parameter key="47" value="Knee_Right z.true.real.attribute"/>
+          <parameter key="48" value="Ankle_Left x.true.real.attribute"/>
+          <parameter key="49" value="Ankle_Left y.true.real.attribute"/>
+          <parameter key="50" value="Ankle_Left z.true.real.attribute"/>
+          <parameter key="51" value="Ankle_Right x.true.real.attribute"/>
+          <parameter key="52" value="Ankle_Right y.true.real.attribute"/>
+          <parameter key="53" value="Ankle_Right z.true.real.attribute"/>
+          <parameter key="54" value="Foot_Left x.true.real.attribute"/>
+          <parameter key="55" value="Foot_Left y.true.real.attribute"/>
+          <parameter key="56" value="Foot_Left z.true.real.attribute"/>
+          <parameter key="57" value="Foot_Right x.true.real.attribute"/>
+          <parameter key="58" value="Foot_Right y.true.real.attribute"/>
+          <parameter key="59" value="Foot_Right z.true.real.attribute"/>
+          <parameter key="60" value="Head phi.true.real.attribute"/>
+          <parameter key="61" value="Head theta.true.real.attribute"/>
+          <parameter key="62" value="Head epsilon.true.real.attribute"/>
+          <parameter key="63" value="Shoulder_Center phi.true.real.attribute"/>
+          <parameter key="64" value="Shoulder_Center theta.true.real.attribute"/>
+          <parameter key="65" value="Shoulder_Center epsilon.true.real.attribute"/>
+          <parameter key="66" value="Shoulder_Left phi.true.real.attribute"/>
+          <parameter key="67" value="Shoulder_Left theta.true.real.attribute"/>
+          <parameter key="68" value="Shoulder_Left epsilon.true.real.attribute"/>
+          <parameter key="69" value="Shoulder_Right phi.true.real.attribute"/>
+          <parameter key="70" value="Shoulder_Right theta.true.real.attribute"/>
+          <parameter key="71" value="Shoulder_Right epsilon.true.real.attribute"/>
+          <parameter key="72" value="Elbow_Left phi.true.real.attribute"/>
+          <parameter key="73" value="Elbow_Left theta.true.real.attribute"/>
+          <parameter key="74" value="Elbow_Left epsilon.true.real.attribute"/>
+          <parameter key="75" value="Elbow_Right phi.true.real.attribute"/>
+          <parameter key="76" value="Elbow_Right theta.true.real.attribute"/>
+          <parameter key="77" value="Elbow_Right epsilon.true.real.attribute"/>
+          <parameter key="78" value="Wrist_Left phi.true.real.attribute"/>
+          <parameter key="79" value="Wrist_Left theta.true.real.attribute"/>
+          <parameter key="80" value="Wrist_Left epsilon.true.real.attribute"/>
+          <parameter key="81" value="Wrist_Right phi.true.real.attribute"/>
+          <parameter key="82" value="Wrist_Right theta.true.real.attribute"/>
+          <parameter key="83" value="Wrist_Right epsilon.true.real.attribute"/>
+          <parameter key="84" value="Hand_Left phi.true.real.attribute"/>
+          <parameter key="85" value="Hand_Left theta.true.real.attribute"/>
+          <parameter key="86" value="Hand_Left epsilon.true.real.attribute"/>
+          <parameter key="87" value="Hand_Right phi.true.real.attribute"/>
+          <parameter key="88" value="Hand_Right theta.true.real.attribute"/>
+          <parameter key="89" value="Hand_Right epsilon.true.real.attribute"/>
+          <parameter key="90" value="Spine phi.true.real.attribute"/>
+          <parameter key="91" value="Spine theta.true.real.attribute"/>
+          <parameter key="92" value="Spine epsilon.true.real.attribute"/>
+          <parameter key="93" value="Hip_Center phi.true.real.attribute"/>
+          <parameter key="94" value="Hip_Center theta.true.real.attribute"/>
+          <parameter key="95" value="Hip_Center epsilon.true.real.attribute"/>
+          <parameter key="96" value="Hip_Left phi.true.real.attribute"/>
+          <parameter key="97" value="Hip_Left theta.true.real.attribute"/>
+          <parameter key="98" value="Hip_Left epsilon.true.real.attribute"/>
+          <parameter key="99" value="Hip_Right phi.true.real.attribute"/>
+          <parameter key="100" value="Hip_Right theta.true.real.attribute"/>
+          <parameter key="101" value="Hip_Right epsilon.true.real.attribute"/>
+          <parameter key="102" value="Knee_Left phi.true.real.attribute"/>
+          <parameter key="103" value="Knee_Left theta.true.real.attribute"/>
+          <parameter key="104" value="Knee_Left epsilon.true.real.attribute"/>
+          <parameter key="105" value="Knee_Right phi.true.real.attribute"/>
+          <parameter key="106" value="Knee_Right theta.true.real.attribute"/>
+          <parameter key="107" value="Knee_Right epsilon.true.real.attribute"/>
+          <parameter key="108" value="Ankle_Left phi.true.real.attribute"/>
+          <parameter key="109" value="Ankle_Left theta.true.real.attribute"/>
+          <parameter key="110" value="Ankle_Left epsilon.true.real.attribute"/>
+          <parameter key="111" value="Ankle_Right phi.true.real.attribute"/>
+          <parameter key="112" value="Ankle_Right theta.true.real.attribute"/>
+          <parameter key="113" value="Ankle_Right epsilon.true.real.attribute"/>
+          <parameter key="114" value="Foot_Left phi.true.real.attribute"/>
+          <parameter key="115" value="Foot_Left theta.true.real.attribute"/>
+          <parameter key="116" value="Foot_Left epsilon.true.real.attribute"/>
+          <parameter key="117" value="Foot_Right phi.true.real.attribute"/>
+          <parameter key="118" value="Foot_Right theta.true.real.attribute"/>
+          <parameter key="119" value="Foot_Right epsilon.true.real.attribute"/>
+          <parameter key="120" value="mean Head phi.true.real.attribute"/>
+          <parameter key="121" value="mean Head theta.true.real.attribute"/>
+          <parameter key="122" value="mean Head epsilon.true.real.attribute"/>
+          <parameter key="123" value="mean Shoulder_Center phi.true.real.attribute"/>
+          <parameter key="124" value="mean Shoulder_Center theta.true.real.attribute"/>
+          <parameter key="125" value="mean Shoulder_Center epsilon.true.real.attribute"/>
+          <parameter key="126" value="mean Shoulder_Left phi.true.real.attribute"/>
+          <parameter key="127" value="mean Shoulder_Left theta.true.real.attribute"/>
+          <parameter key="128" value="mean Shoulder_Left epsilon.true.real.attribute"/>
+          <parameter key="129" value="mean Shoulder_Right phi.true.real.attribute"/>
+          <parameter key="130" value="mean Shoulder_Right theta.true.real.attribute"/>
+          <parameter key="131" value="mean Shoulder_Right epsilon.true.real.attribute"/>
+          <parameter key="132" value="mean Elbow_Left phi.true.real.attribute"/>
+          <parameter key="133" value="mean Elbow_Left theta.true.real.attribute"/>
+          <parameter key="134" value="mean Elbow_Left epsilon.true.real.attribute"/>
+          <parameter key="135" value="mean Elbow_Right phi.true.real.attribute"/>
+          <parameter key="136" value="mean Elbow_Right theta.true.real.attribute"/>
+          <parameter key="137" value="mean Elbow_Right epsilon.true.real.attribute"/>
+          <parameter key="138" value="mean Wrist_Left phi.true.real.attribute"/>
+          <parameter key="139" value="mean Wrist_Left theta.true.real.attribute"/>
+          <parameter key="140" value="mean Wrist_Left epsilon.true.real.attribute"/>
+          <parameter key="141" value="mean Wrist_Right phi.true.real.attribute"/>
+          <parameter key="142" value="mean Wrist_Right theta.true.real.attribute"/>
+          <parameter key="143" value="mean Wrist_Right epsilon.true.real.attribute"/>
+          <parameter key="144" value="mean Hand_Left phi.true.real.attribute"/>
+          <parameter key="145" value="mean Hand_Left theta.true.real.attribute"/>
+          <parameter key="146" value="mean Hand_Left epsilon.true.real.attribute"/>
+          <parameter key="147" value="mean Hand_Right phi.true.real.attribute"/>
+          <parameter key="148" value="mean Hand_Right theta.true.real.attribute"/>
+          <parameter key="149" value="mean Hand_Right epsilon.true.real.attribute"/>
+          <parameter key="150" value="mean Spine phi.true.real.attribute"/>
+          <parameter key="151" value="mean Spine theta.true.real.attribute"/>
+          <parameter key="152" value="mean Spine epsilon.true.real.attribute"/>
+          <parameter key="153" value="mean Hip_Center phi.true.real.attribute"/>
+          <parameter key="154" value="mean Hip_Center theta.true.real.attribute"/>
+          <parameter key="155" value="mean Hip_Center epsilon.true.real.attribute"/>
+          <parameter key="156" value="mean Hip_Left phi.true.real.attribute"/>
+          <parameter key="157" value="mean Hip_Left theta.true.real.attribute"/>
+          <parameter key="158" value="mean Hip_Left epsilon.true.real.attribute"/>
+          <parameter key="159" value="mean Hip_Right phi.true.real.attribute"/>
+          <parameter key="160" value="mean Hip_Right theta.true.real.attribute"/>
+          <parameter key="161" value="mean Hip_Right epsilon.true.real.attribute"/>
+          <parameter key="162" value="mean Knee_Left phi.true.real.attribute"/>
+          <parameter key="163" value="mean Knee_Left theta.true.real.attribute"/>
+          <parameter key="164" value="mean Knee_Left epsilon.true.real.attribute"/>
+          <parameter key="165" value="mean Knee_Right phi.true.real.attribute"/>
+          <parameter key="166" value="mean Knee_Right theta.true.real.attribute"/>
+          <parameter key="167" value="mean Knee_Right epsilon.true.real.attribute"/>
+          <parameter key="168" value="mean Ankle_Left phi.true.real.attribute"/>
+          <parameter key="169" value="mean Ankle_Left theta.true.real.attribute"/>
+          <parameter key="170" value="mean Ankle_Left epsilon.true.real.attribute"/>
+          <parameter key="171" value="mean Ankle_Right phi.true.real.attribute"/>
+          <parameter key="172" value="mean Ankle_Right theta.true.real.attribute"/>
+          <parameter key="173" value="mean Ankle_Right epsilon.true.real.attribute"/>
+          <parameter key="174" value="mean Foot_Left phi.true.real.attribute"/>
+          <parameter key="175" value="mean Foot_Left theta.true.real.attribute"/>
+          <parameter key="176" value="mean Foot_Left epsilon.true.real.attribute"/>
+          <parameter key="177" value="mean Foot_Right phi.true.real.attribute"/>
+          <parameter key="178" value="mean Foot_Right theta.true.real.attribute"/>
+          <parameter key="179" value="mean Foot_Right epsilon.true.real.attribute"/>
+          <parameter key="180" value="std Head phi.true.real.attribute"/>
+          <parameter key="181" value="std Head theta.true.real.attribute"/>
+          <parameter key="182" value="std Head epsilon.true.real.attribute"/>
+          <parameter key="183" value="std Shoulder_Center phi.true.real.attribute"/>
+          <parameter key="184" value="std Shoulder_Center theta.true.real.attribute"/>
+          <parameter key="185" value="std Shoulder_Center epsilon.true.real.attribute"/>
+          <parameter key="186" value="std Shoulder_Left phi.true.real.attribute"/>
+          <parameter key="187" value="std Shoulder_Left theta.true.real.attribute"/>
+          <parameter key="188" value="std Shoulder_Left epsilon.true.real.attribute"/>
+          <parameter key="189" value="std Shoulder_Right phi.true.real.attribute"/>
+          <parameter key="190" value="std Shoulder_Right theta.true.real.attribute"/>
+          <parameter key="191" value="std Shoulder_Right epsilon.true.real.attribute"/>
+          <parameter key="192" value="std Elbow_Left phi.true.real.attribute"/>
+          <parameter key="193" value="std Elbow_Left theta.true.real.attribute"/>
+          <parameter key="194" value="std Elbow_Left epsilon.true.real.attribute"/>
+          <parameter key="195" value="std Elbow_Right phi.true.real.attribute"/>
+          <parameter key="196" value="std Elbow_Right theta.true.real.attribute"/>
+          <parameter key="197" value="std Elbow_Right epsilon.true.real.attribute"/>
+          <parameter key="198" value="std Wrist_Left phi.true.real.attribute"/>
+          <parameter key="199" value="std Wrist_Left theta.true.real.attribute"/>
+          <parameter key="200" value="std Wrist_Left epsilon.true.real.attribute"/>
+          <parameter key="201" value="std Wrist_Right phi.true.real.attribute"/>
+          <parameter key="202" value="std Wrist_Right theta.true.real.attribute"/>
+          <parameter key="203" value="std Wrist_Right epsilon.true.real.attribute"/>
+          <parameter key="204" value="std Hand_Left phi.true.real.attribute"/>
+          <parameter key="205" value="std Hand_Left theta.true.real.attribute"/>
+          <parameter key="206" value="std Hand_Left epsilon.true.real.attribute"/>
+          <parameter key="207" value="std Hand_Right phi.true.real.attribute"/>
+          <parameter key="208" value="std Hand_Right theta.true.real.attribute"/>
+          <parameter key="209" value="std Hand_Right epsilon.true.real.attribute"/>
+          <parameter key="210" value="std Spine phi.true.real.attribute"/>
+          <parameter key="211" value="std Spine theta.true.real.attribute"/>
+          <parameter key="212" value="std Spine epsilon.true.real.attribute"/>
+          <parameter key="213" value="std Hip_Center phi.true.real.attribute"/>
+          <parameter key="214" value="std Hip_Center theta.true.real.attribute"/>
+          <parameter key="215" value="std Hip_Center epsilon.true.real.attribute"/>
+          <parameter key="216" value="std Hip_Left phi.true.real.attribute"/>
+          <parameter key="217" value="std Hip_Left theta.true.real.attribute"/>
+          <parameter key="218" value="std Hip_Left epsilon.true.real.attribute"/>
+          <parameter key="219" value="std Hip_Right phi.true.real.attribute"/>
+          <parameter key="220" value="std Hip_Right theta.true.real.attribute"/>
+          <parameter key="221" value="std Hip_Right epsilon.true.real.attribute"/>
+          <parameter key="222" value="std Knee_Left phi.true.real.attribute"/>
+          <parameter key="223" value="std Knee_Left theta.true.real.attribute"/>
+          <parameter key="224" value="std Knee_Left epsilon.true.real.attribute"/>
+          <parameter key="225" value="std Knee_Right phi.true.real.attribute"/>
+          <parameter key="226" value="std Knee_Right theta.true.real.attribute"/>
+          <parameter key="227" value="std Knee_Right epsilon.true.real.attribute"/>
+          <parameter key="228" value="std Ankle_Left phi.true.real.attribute"/>
+          <parameter key="229" value="std Ankle_Left theta.true.real.attribute"/>
+          <parameter key="230" value="std Ankle_Left epsilon.true.real.attribute"/>
+          <parameter key="231" value="std Ankle_Right phi.true.real.attribute"/>
+          <parameter key="232" value="std Ankle_Right theta.true.real.attribute"/>
+          <parameter key="233" value="std Ankle_Right epsilon.true.real.attribute"/>
+          <parameter key="234" value="std Foot_Left phi.true.real.attribute"/>
+          <parameter key="235" value="std Foot_Left theta.true.real.attribute"/>
+          <parameter key="236" value="std Foot_Left epsilon.true.real.attribute"/>
+          <parameter key="237" value="std Foot_Right phi.true.real.attribute"/>
+          <parameter key="238" value="std Foot_Right theta.true.real.attribute"/>
+          <parameter key="239" value="std Foot_Right epsilon.true.real.attribute"/>
+          <parameter key="240" value="Gesture.true.polynominal.attribute"/>
+          <parameter key="241" value="GestureID.true.integer.attribute"/>
         </list>
         <parameter key="read_not_matching_values_as_missings" value="false"/>
       </operator>
-      <operator activated="true" class="set_role" compatibility="9.10.013" expanded="true" height="82" name="Set Role" width="90" x="179" y="187">
-        <parameter key="attribute_name" value="ges"/>
-        <parameter key="target_role" value="label"/>
-        <list key="set_additional_roles">
-          <parameter key="ges" value="label"/>
-          <parameter key="gesID" value="id"/>
+      <operator activated="true" class="blending:set_role" compatibility="10.1.002" expanded="true" height="82" name="Set Role" width="90" x="179" y="136">
+        <list key="set_roles">
+          <parameter key="Gesture" value="label"/>
+          <parameter key="GestureID" value="id"/>
         </list>
       </operator>
-      <operator activated="true" class="operator_toolbox:group_into_collection" compatibility="2.14.000" expanded="true" height="82" name="Group Into Collection" width="90" x="313" y="187">
-        <parameter key="group_by_attribute" value="ges"/>
+      <operator activated="true" class="operator_toolbox:group_into_collection" compatibility="2.14.000" expanded="true" height="82" name="Group Into Collection" width="90" x="313" y="136">
+        <parameter key="group_by_attribute" value="Gesture"/>
         <parameter key="group_by_attribute (numerical)" value=""/>
         <parameter key="sorting_order" value="alphabetical"/>
       </operator>
-      <operator activated="true" class="loop_collection" compatibility="9.10.013" expanded="true" height="82" name="Loop Collection" width="90" x="447" y="187">
+      <operator activated="true" class="loop_collection" compatibility="10.1.002" expanded="true" height="82" name="Loop Collection" width="90" x="447" y="136">
         <parameter key="set_iteration_macro" value="false"/>
         <parameter key="macro_name" value="iteration"/>
         <parameter key="macro_start_value" value="1"/>
         <parameter key="unfold" value="false"/>
         <process expanded="true">
-          <operator activated="true" class="replace_missing_values" compatibility="9.10.013" expanded="true" height="103" name="Replace Missing Values" width="90" x="179" y="34">
+          <operator activated="true" class="replace_missing_values" compatibility="10.1.002" expanded="true" height="103" name="Replace Missing Values" width="90" x="179" y="34">
             <parameter key="return_preprocessing_model" value="false"/>
-            <parameter key="create_view" value="false"/>
             <parameter key="attribute_filter_type" value="all"/>
             <parameter key="attribute" value=""/>
             <parameter key="attributes" value=""/>
@@ -324,16 +321,36 @@
           <portSpacing port="sink_output 2" spacing="0"/>
         </process>
       </operator>
-      <operator activated="true" class="append" compatibility="9.10.013" expanded="true" height="82" name="Append" width="90" x="581" y="187">
+      <operator activated="true" class="append" compatibility="10.1.002" expanded="true" height="82" name="Append" width="90" x="581" y="136">
         <parameter key="datamanagement" value="double_array"/>
         <parameter key="data_management" value="auto"/>
         <parameter key="merge_type" value="all"/>
+      </operator>
+      <operator activated="true" class="normalize" compatibility="10.1.002" expanded="true" height="103" name="Normalize" width="90" x="715" y="136">
+        <parameter key="return_preprocessing_model" value="false"/>
+        <parameter key="attribute_filter_type" value="all"/>
+        <parameter key="attribute" value=""/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="numeric"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="real"/>
+        <parameter key="block_type" value="value_series"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_series_end"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="method" value="range transformation"/>
+        <parameter key="min" value="0.0"/>
+        <parameter key="max" value="1.0"/>
+        <parameter key="allow_negative_values" value="false"/>
       </operator>
       <connect from_op="Read CSV" from_port="output" to_op="Set Role" to_port="example set input"/>
       <connect from_op="Set Role" from_port="example set output" to_op="Group Into Collection" to_port="exa"/>
       <connect from_op="Group Into Collection" from_port="col" to_op="Loop Collection" to_port="collection"/>
       <connect from_op="Loop Collection" from_port="output 1" to_op="Append" to_port="example set 1"/>
-      <connect from_op="Append" from_port="merged set" to_port="result 1"/>
+      <connect from_op="Append" from_port="merged set" to_op="Normalize" to_port="example set input"/>
+      <connect from_op="Normalize" from_port="example set output" to_port="result 1"/>
       <portSpacing port="source_input 1" spacing="0"/>
       <portSpacing port="sink_result 1" spacing="0"/>
       <portSpacing port="sink_result 2" spacing="0"/>
