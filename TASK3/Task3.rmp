@@ -1,0 +1,1722 @@
+<?xml version="1.0" encoding="UTF-8"?><process version="10.1.002">
+  <context>
+    <input/>
+    <output/>
+    <macros/>
+  </context>
+  <operator activated="true" class="process" compatibility="10.1.002" expanded="true" name="Process">
+    <parameter key="logverbosity" value="init"/>
+    <parameter key="random_seed" value="2001"/>
+    <parameter key="send_mail" value="never"/>
+    <parameter key="notification_email" value=""/>
+    <parameter key="process_duration_for_mail" value="30"/>
+    <parameter key="encoding" value="SYSTEM"/>
+    <process expanded="true">
+      <operator activated="true" class="read_csv" compatibility="10.1.002" expanded="true" height="68" name="Read CSV" width="90" x="45" y="34">
+        <parameter key="csv_file" value="C:\Users\sli02\OneDrive\Skrivbord\Machinelearning\Repo\D0033E-Project\TASK1\train-final-replaced.csv"/>
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="Head x.true.real.attribute"/>
+          <parameter key="1" value="Head y.true.real.attribute"/>
+          <parameter key="2" value="Head z.true.real.attribute"/>
+          <parameter key="3" value="Shoulder_Center x.true.real.attribute"/>
+          <parameter key="4" value="Shoulder_Center y.true.real.attribute"/>
+          <parameter key="5" value="Shoulder_Center z.true.real.attribute"/>
+          <parameter key="6" value="Shoulder_Left x.true.real.attribute"/>
+          <parameter key="7" value="Shoulder_Left y.true.real.attribute"/>
+          <parameter key="8" value="Shoulder_Left z.true.real.attribute"/>
+          <parameter key="9" value="Shoulder_Right x.true.real.attribute"/>
+          <parameter key="10" value="Shoulder_Right y.true.real.attribute"/>
+          <parameter key="11" value="Shoulder_Right z.true.real.attribute"/>
+          <parameter key="12" value="Elbow_Left x.true.real.attribute"/>
+          <parameter key="13" value="Elbow_Left y.true.real.attribute"/>
+          <parameter key="14" value="Elbow_Left z.true.real.attribute"/>
+          <parameter key="15" value="Elbow_Right x.true.real.attribute"/>
+          <parameter key="16" value="Elbow_Right y.true.real.attribute"/>
+          <parameter key="17" value="Elbow_Right z.true.real.attribute"/>
+          <parameter key="18" value="Wrist_Left x.true.real.attribute"/>
+          <parameter key="19" value="Wrist_Left y.true.real.attribute"/>
+          <parameter key="20" value="Wrist_Left z.true.real.attribute"/>
+          <parameter key="21" value="Wrist_Right x.true.real.attribute"/>
+          <parameter key="22" value="Wrist_Right y.true.real.attribute"/>
+          <parameter key="23" value="Wrist_Right z.true.real.attribute"/>
+          <parameter key="24" value="Hand_Left x.true.real.attribute"/>
+          <parameter key="25" value="Hand_Left y.true.real.attribute"/>
+          <parameter key="26" value="Hand_Left z.true.real.attribute"/>
+          <parameter key="27" value="Hand_Right x.true.real.attribute"/>
+          <parameter key="28" value="Hand_Right y.true.real.attribute"/>
+          <parameter key="29" value="Hand_Right z.true.real.attribute"/>
+          <parameter key="30" value="Spine x.true.real.attribute"/>
+          <parameter key="31" value="Spine y.true.real.attribute"/>
+          <parameter key="32" value="Spine z.true.real.attribute"/>
+          <parameter key="33" value="Hip_Center x.true.real.attribute"/>
+          <parameter key="34" value="Hip_Center y.true.real.attribute"/>
+          <parameter key="35" value="Hip_Center z.true.real.attribute"/>
+          <parameter key="36" value="Hip_Left x.true.real.attribute"/>
+          <parameter key="37" value="Hip_Left y.true.real.attribute"/>
+          <parameter key="38" value="Hip_Left z.true.real.attribute"/>
+          <parameter key="39" value="Hip_Right x.true.real.attribute"/>
+          <parameter key="40" value="Hip_Right y.true.real.attribute"/>
+          <parameter key="41" value="Hip_Right z.true.real.attribute"/>
+          <parameter key="42" value="Knee_Left x.true.real.attribute"/>
+          <parameter key="43" value="Knee_Left y.true.real.attribute"/>
+          <parameter key="44" value="Knee_Left z.true.real.attribute"/>
+          <parameter key="45" value="Knee_Right x.true.real.attribute"/>
+          <parameter key="46" value="Knee_Right y.true.real.attribute"/>
+          <parameter key="47" value="Knee_Right z.true.real.attribute"/>
+          <parameter key="48" value="Ankle_Left x.true.real.attribute"/>
+          <parameter key="49" value="Ankle_Left y.true.real.attribute"/>
+          <parameter key="50" value="Ankle_Left z.true.real.attribute"/>
+          <parameter key="51" value="Ankle_Right x.true.real.attribute"/>
+          <parameter key="52" value="Ankle_Right y.true.real.attribute"/>
+          <parameter key="53" value="Ankle_Right z.true.real.attribute"/>
+          <parameter key="54" value="Foot_Left x.true.real.attribute"/>
+          <parameter key="55" value="Foot_Left y.true.real.attribute"/>
+          <parameter key="56" value="Foot_Left z.true.real.attribute"/>
+          <parameter key="57" value="Foot_Right x.true.real.attribute"/>
+          <parameter key="58" value="Foot_Right y.true.real.attribute"/>
+          <parameter key="59" value="Foot_Right z.true.real.attribute"/>
+          <parameter key="60" value="Head phi.true.real.attribute"/>
+          <parameter key="61" value="Head theta.true.real.attribute"/>
+          <parameter key="62" value="Head epsilon.true.real.attribute"/>
+          <parameter key="63" value="Shoulder_Center phi.true.real.attribute"/>
+          <parameter key="64" value="Shoulder_Center theta.true.real.attribute"/>
+          <parameter key="65" value="Shoulder_Center epsilon.true.real.attribute"/>
+          <parameter key="66" value="Shoulder_Left phi.true.real.attribute"/>
+          <parameter key="67" value="Shoulder_Left theta.true.real.attribute"/>
+          <parameter key="68" value="Shoulder_Left epsilon.true.real.attribute"/>
+          <parameter key="69" value="Shoulder_Right phi.true.real.attribute"/>
+          <parameter key="70" value="Shoulder_Right theta.true.real.attribute"/>
+          <parameter key="71" value="Shoulder_Right epsilon.true.real.attribute"/>
+          <parameter key="72" value="Elbow_Left phi.true.real.attribute"/>
+          <parameter key="73" value="Elbow_Left theta.true.real.attribute"/>
+          <parameter key="74" value="Elbow_Left epsilon.true.real.attribute"/>
+          <parameter key="75" value="Elbow_Right phi.true.real.attribute"/>
+          <parameter key="76" value="Elbow_Right theta.true.real.attribute"/>
+          <parameter key="77" value="Elbow_Right epsilon.true.real.attribute"/>
+          <parameter key="78" value="Wrist_Left phi.true.real.attribute"/>
+          <parameter key="79" value="Wrist_Left theta.true.real.attribute"/>
+          <parameter key="80" value="Wrist_Left epsilon.true.real.attribute"/>
+          <parameter key="81" value="Wrist_Right phi.true.real.attribute"/>
+          <parameter key="82" value="Wrist_Right theta.true.real.attribute"/>
+          <parameter key="83" value="Wrist_Right epsilon.true.real.attribute"/>
+          <parameter key="84" value="Hand_Left phi.true.real.attribute"/>
+          <parameter key="85" value="Hand_Left theta.true.real.attribute"/>
+          <parameter key="86" value="Hand_Left epsilon.true.real.attribute"/>
+          <parameter key="87" value="Hand_Right phi.true.real.attribute"/>
+          <parameter key="88" value="Hand_Right theta.true.real.attribute"/>
+          <parameter key="89" value="Hand_Right epsilon.true.real.attribute"/>
+          <parameter key="90" value="Spine phi.true.real.attribute"/>
+          <parameter key="91" value="Spine theta.true.real.attribute"/>
+          <parameter key="92" value="Spine epsilon.true.real.attribute"/>
+          <parameter key="93" value="Hip_Center phi.true.real.attribute"/>
+          <parameter key="94" value="Hip_Center theta.true.real.attribute"/>
+          <parameter key="95" value="Hip_Center epsilon.true.real.attribute"/>
+          <parameter key="96" value="Hip_Left phi.true.real.attribute"/>
+          <parameter key="97" value="Hip_Left theta.true.real.attribute"/>
+          <parameter key="98" value="Hip_Left epsilon.true.real.attribute"/>
+          <parameter key="99" value="Hip_Right phi.true.real.attribute"/>
+          <parameter key="100" value="Hip_Right theta.true.real.attribute"/>
+          <parameter key="101" value="Hip_Right epsilon.true.real.attribute"/>
+          <parameter key="102" value="Knee_Left phi.true.real.attribute"/>
+          <parameter key="103" value="Knee_Left theta.true.real.attribute"/>
+          <parameter key="104" value="Knee_Left epsilon.true.real.attribute"/>
+          <parameter key="105" value="Knee_Right phi.true.real.attribute"/>
+          <parameter key="106" value="Knee_Right theta.true.real.attribute"/>
+          <parameter key="107" value="Knee_Right epsilon.true.real.attribute"/>
+          <parameter key="108" value="Ankle_Left phi.true.real.attribute"/>
+          <parameter key="109" value="Ankle_Left theta.true.real.attribute"/>
+          <parameter key="110" value="Ankle_Left epsilon.true.real.attribute"/>
+          <parameter key="111" value="Ankle_Right phi.true.real.attribute"/>
+          <parameter key="112" value="Ankle_Right theta.true.real.attribute"/>
+          <parameter key="113" value="Ankle_Right epsilon.true.real.attribute"/>
+          <parameter key="114" value="Foot_Left phi.true.real.attribute"/>
+          <parameter key="115" value="Foot_Left theta.true.real.attribute"/>
+          <parameter key="116" value="Foot_Left epsilon.true.real.attribute"/>
+          <parameter key="117" value="Foot_Right phi.true.real.attribute"/>
+          <parameter key="118" value="Foot_Right theta.true.real.attribute"/>
+          <parameter key="119" value="Foot_Right epsilon.true.real.attribute"/>
+          <parameter key="120" value="mean Head phi.true.real.attribute"/>
+          <parameter key="121" value="mean Head theta.true.real.attribute"/>
+          <parameter key="122" value="mean Head epsilon.true.real.attribute"/>
+          <parameter key="123" value="mean Shoulder_Center phi.true.real.attribute"/>
+          <parameter key="124" value="mean Shoulder_Center theta.true.real.attribute"/>
+          <parameter key="125" value="mean Shoulder_Center epsilon.true.real.attribute"/>
+          <parameter key="126" value="mean Shoulder_Left phi.true.real.attribute"/>
+          <parameter key="127" value="mean Shoulder_Left theta.true.real.attribute"/>
+          <parameter key="128" value="mean Shoulder_Left epsilon.true.real.attribute"/>
+          <parameter key="129" value="mean Shoulder_Right phi.true.real.attribute"/>
+          <parameter key="130" value="mean Shoulder_Right theta.true.real.attribute"/>
+          <parameter key="131" value="mean Shoulder_Right epsilon.true.real.attribute"/>
+          <parameter key="132" value="mean Elbow_Left phi.true.real.attribute"/>
+          <parameter key="133" value="mean Elbow_Left theta.true.real.attribute"/>
+          <parameter key="134" value="mean Elbow_Left epsilon.true.real.attribute"/>
+          <parameter key="135" value="mean Elbow_Right phi.true.real.attribute"/>
+          <parameter key="136" value="mean Elbow_Right theta.true.real.attribute"/>
+          <parameter key="137" value="mean Elbow_Right epsilon.true.real.attribute"/>
+          <parameter key="138" value="mean Wrist_Left phi.true.real.attribute"/>
+          <parameter key="139" value="mean Wrist_Left theta.true.real.attribute"/>
+          <parameter key="140" value="mean Wrist_Left epsilon.true.real.attribute"/>
+          <parameter key="141" value="mean Wrist_Right phi.true.real.attribute"/>
+          <parameter key="142" value="mean Wrist_Right theta.true.real.attribute"/>
+          <parameter key="143" value="mean Wrist_Right epsilon.true.real.attribute"/>
+          <parameter key="144" value="mean Hand_Left phi.true.real.attribute"/>
+          <parameter key="145" value="mean Hand_Left theta.true.real.attribute"/>
+          <parameter key="146" value="mean Hand_Left epsilon.true.real.attribute"/>
+          <parameter key="147" value="mean Hand_Right phi.true.real.attribute"/>
+          <parameter key="148" value="mean Hand_Right theta.true.real.attribute"/>
+          <parameter key="149" value="mean Hand_Right epsilon.true.real.attribute"/>
+          <parameter key="150" value="mean Spine phi.true.real.attribute"/>
+          <parameter key="151" value="mean Spine theta.true.real.attribute"/>
+          <parameter key="152" value="mean Spine epsilon.true.real.attribute"/>
+          <parameter key="153" value="mean Hip_Center phi.true.real.attribute"/>
+          <parameter key="154" value="mean Hip_Center theta.true.real.attribute"/>
+          <parameter key="155" value="mean Hip_Center epsilon.true.real.attribute"/>
+          <parameter key="156" value="mean Hip_Left phi.true.real.attribute"/>
+          <parameter key="157" value="mean Hip_Left theta.true.real.attribute"/>
+          <parameter key="158" value="mean Hip_Left epsilon.true.real.attribute"/>
+          <parameter key="159" value="mean Hip_Right phi.true.real.attribute"/>
+          <parameter key="160" value="mean Hip_Right theta.true.real.attribute"/>
+          <parameter key="161" value="mean Hip_Right epsilon.true.real.attribute"/>
+          <parameter key="162" value="mean Knee_Left phi.true.real.attribute"/>
+          <parameter key="163" value="mean Knee_Left theta.true.real.attribute"/>
+          <parameter key="164" value="mean Knee_Left epsilon.true.real.attribute"/>
+          <parameter key="165" value="mean Knee_Right phi.true.real.attribute"/>
+          <parameter key="166" value="mean Knee_Right theta.true.real.attribute"/>
+          <parameter key="167" value="mean Knee_Right epsilon.true.real.attribute"/>
+          <parameter key="168" value="mean Ankle_Left phi.true.real.attribute"/>
+          <parameter key="169" value="mean Ankle_Left theta.true.real.attribute"/>
+          <parameter key="170" value="mean Ankle_Left epsilon.true.real.attribute"/>
+          <parameter key="171" value="mean Ankle_Right phi.true.real.attribute"/>
+          <parameter key="172" value="mean Ankle_Right theta.true.real.attribute"/>
+          <parameter key="173" value="mean Ankle_Right epsilon.true.real.attribute"/>
+          <parameter key="174" value="mean Foot_Left phi.true.real.attribute"/>
+          <parameter key="175" value="mean Foot_Left theta.true.real.attribute"/>
+          <parameter key="176" value="mean Foot_Left epsilon.true.real.attribute"/>
+          <parameter key="177" value="mean Foot_Right phi.true.real.attribute"/>
+          <parameter key="178" value="mean Foot_Right theta.true.real.attribute"/>
+          <parameter key="179" value="mean Foot_Right epsilon.true.real.attribute"/>
+          <parameter key="180" value="std Head phi.true.real.attribute"/>
+          <parameter key="181" value="std Head theta.true.real.attribute"/>
+          <parameter key="182" value="std Head epsilon.true.real.attribute"/>
+          <parameter key="183" value="std Shoulder_Center phi.true.real.attribute"/>
+          <parameter key="184" value="std Shoulder_Center theta.true.real.attribute"/>
+          <parameter key="185" value="std Shoulder_Center epsilon.true.real.attribute"/>
+          <parameter key="186" value="std Shoulder_Left phi.true.real.attribute"/>
+          <parameter key="187" value="std Shoulder_Left theta.true.real.attribute"/>
+          <parameter key="188" value="std Shoulder_Left epsilon.true.real.attribute"/>
+          <parameter key="189" value="std Shoulder_Right phi.true.real.attribute"/>
+          <parameter key="190" value="std Shoulder_Right theta.true.real.attribute"/>
+          <parameter key="191" value="std Shoulder_Right epsilon.true.real.attribute"/>
+          <parameter key="192" value="std Elbow_Left phi.true.real.attribute"/>
+          <parameter key="193" value="std Elbow_Left theta.true.real.attribute"/>
+          <parameter key="194" value="std Elbow_Left epsilon.true.real.attribute"/>
+          <parameter key="195" value="std Elbow_Right phi.true.real.attribute"/>
+          <parameter key="196" value="std Elbow_Right theta.true.real.attribute"/>
+          <parameter key="197" value="std Elbow_Right epsilon.true.real.attribute"/>
+          <parameter key="198" value="std Wrist_Left phi.true.real.attribute"/>
+          <parameter key="199" value="std Wrist_Left theta.true.real.attribute"/>
+          <parameter key="200" value="std Wrist_Left epsilon.true.real.attribute"/>
+          <parameter key="201" value="std Wrist_Right phi.true.real.attribute"/>
+          <parameter key="202" value="std Wrist_Right theta.true.real.attribute"/>
+          <parameter key="203" value="std Wrist_Right epsilon.true.real.attribute"/>
+          <parameter key="204" value="std Hand_Left phi.true.real.attribute"/>
+          <parameter key="205" value="std Hand_Left theta.true.real.attribute"/>
+          <parameter key="206" value="std Hand_Left epsilon.true.real.attribute"/>
+          <parameter key="207" value="std Hand_Right phi.true.real.attribute"/>
+          <parameter key="208" value="std Hand_Right theta.true.real.attribute"/>
+          <parameter key="209" value="std Hand_Right epsilon.true.real.attribute"/>
+          <parameter key="210" value="std Spine phi.true.real.attribute"/>
+          <parameter key="211" value="std Spine theta.true.real.attribute"/>
+          <parameter key="212" value="std Spine epsilon.true.real.attribute"/>
+          <parameter key="213" value="std Hip_Center phi.true.real.attribute"/>
+          <parameter key="214" value="std Hip_Center theta.true.real.attribute"/>
+          <parameter key="215" value="std Hip_Center epsilon.true.real.attribute"/>
+          <parameter key="216" value="std Hip_Left phi.true.real.attribute"/>
+          <parameter key="217" value="std Hip_Left theta.true.real.attribute"/>
+          <parameter key="218" value="std Hip_Left epsilon.true.real.attribute"/>
+          <parameter key="219" value="std Hip_Right phi.true.real.attribute"/>
+          <parameter key="220" value="std Hip_Right theta.true.real.attribute"/>
+          <parameter key="221" value="std Hip_Right epsilon.true.real.attribute"/>
+          <parameter key="222" value="std Knee_Left phi.true.real.attribute"/>
+          <parameter key="223" value="std Knee_Left theta.true.real.attribute"/>
+          <parameter key="224" value="std Knee_Left epsilon.true.real.attribute"/>
+          <parameter key="225" value="std Knee_Right phi.true.real.attribute"/>
+          <parameter key="226" value="std Knee_Right theta.true.real.attribute"/>
+          <parameter key="227" value="std Knee_Right epsilon.true.real.attribute"/>
+          <parameter key="228" value="std Ankle_Left phi.true.real.attribute"/>
+          <parameter key="229" value="std Ankle_Left theta.true.real.attribute"/>
+          <parameter key="230" value="std Ankle_Left epsilon.true.real.attribute"/>
+          <parameter key="231" value="std Ankle_Right phi.true.real.attribute"/>
+          <parameter key="232" value="std Ankle_Right theta.true.real.attribute"/>
+          <parameter key="233" value="std Ankle_Right epsilon.true.real.attribute"/>
+          <parameter key="234" value="std Foot_Left phi.true.real.attribute"/>
+          <parameter key="235" value="std Foot_Left theta.true.real.attribute"/>
+          <parameter key="236" value="std Foot_Left epsilon.true.real.attribute"/>
+          <parameter key="237" value="std Foot_Right phi.true.real.attribute"/>
+          <parameter key="238" value="std Foot_Right theta.true.real.attribute"/>
+          <parameter key="239" value="std Foot_Right epsilon.true.real.attribute"/>
+          <parameter key="240" value="GestureID.true.integer.attribute"/>
+          <parameter key="241" value="Gesture.true.polynominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="blending:set_role" compatibility="10.1.002" expanded="true" height="82" name="Set Role" width="90" x="179" y="34">
+        <list key="set_roles">
+          <parameter key="Gesture" value="label"/>
+          <parameter key="GestureID" value="id"/>
+        </list>
+      </operator>
+      <operator activated="true" class="normalize" compatibility="10.1.002" expanded="true" height="103" name="Normalize" width="90" x="313" y="34">
+        <parameter key="return_preprocessing_model" value="false"/>
+        <parameter key="attribute_filter_type" value="all"/>
+        <parameter key="attribute" value=""/>
+        <parameter key="attributes" value=""/>
+        <parameter key="use_except_expression" value="false"/>
+        <parameter key="value_type" value="numeric"/>
+        <parameter key="use_value_type_exception" value="false"/>
+        <parameter key="except_value_type" value="real"/>
+        <parameter key="block_type" value="value_series"/>
+        <parameter key="use_block_type_exception" value="false"/>
+        <parameter key="except_block_type" value="value_series_end"/>
+        <parameter key="invert_selection" value="false"/>
+        <parameter key="include_special_attributes" value="false"/>
+        <parameter key="method" value="Z-transformation"/>
+        <parameter key="min" value="0.0"/>
+        <parameter key="max" value="1.0"/>
+        <parameter key="allow_negative_values" value="false"/>
+      </operator>
+      <operator activated="true" class="multiply" compatibility="10.1.002" expanded="true" height="229" name="Multiply" width="90" x="447" y="34"/>
+      <operator activated="true" class="concurrency:cross_validation" compatibility="10.1.002" expanded="true" height="145" name="Cross Validation (6)" width="90" x="581" y="1054">
+        <parameter key="split_on_batch_attribute" value="false"/>
+        <parameter key="leave_one_out" value="false"/>
+        <parameter key="number_of_folds" value="10"/>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <parameter key="enable_parallel_execution" value="true"/>
+        <process expanded="true">
+          <operator activated="true" class="adaboost" compatibility="10.1.002" expanded="true" height="82" name="AdaBoost (2)" width="90" x="179" y="34">
+            <parameter key="iterations" value="50"/>
+            <process expanded="true">
+              <operator activated="true" class="concurrency:parallel_decision_tree" compatibility="10.1.002" expanded="true" height="103" name="Decision Tree (3)" width="90" x="313" y="85">
+                <parameter key="criterion" value="gain_ratio"/>
+                <parameter key="maximal_depth" value="52"/>
+                <parameter key="apply_pruning" value="true"/>
+                <parameter key="confidence" value="0.1"/>
+                <parameter key="apply_prepruning" value="true"/>
+                <parameter key="minimal_gain" value="0.01"/>
+                <parameter key="minimal_leaf_size" value="2"/>
+                <parameter key="minimal_size_for_split" value="4"/>
+                <parameter key="number_of_prepruning_alternatives" value="3"/>
+              </operator>
+              <connect from_port="training set" to_op="Decision Tree (3)" to_port="training set"/>
+              <connect from_op="Decision Tree (3)" from_port="model" to_port="model"/>
+              <portSpacing port="source_training set" spacing="0"/>
+              <portSpacing port="sink_model" spacing="0"/>
+            </process>
+          </operator>
+          <connect from_port="training set" to_op="AdaBoost (2)" to_port="training set"/>
+          <connect from_op="AdaBoost (2)" from_port="model" to_port="model"/>
+          <portSpacing port="source_training set" spacing="0"/>
+          <portSpacing port="sink_model" spacing="0"/>
+          <portSpacing port="sink_through 1" spacing="0"/>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (11)" width="90" x="112" y="34">
+            <list key="application_parameters"/>
+          </operator>
+          <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Performance (7)" width="90" x="246" y="34">
+            <parameter key="main_criterion" value="first"/>
+            <parameter key="accuracy" value="true"/>
+            <parameter key="classification_error" value="false"/>
+            <parameter key="kappa" value="false"/>
+            <parameter key="weighted_mean_recall" value="false"/>
+            <parameter key="weighted_mean_precision" value="false"/>
+            <parameter key="spearman_rho" value="false"/>
+            <parameter key="kendall_tau" value="false"/>
+            <parameter key="absolute_error" value="false"/>
+            <parameter key="relative_error" value="false"/>
+            <parameter key="relative_error_lenient" value="false"/>
+            <parameter key="relative_error_strict" value="false"/>
+            <parameter key="normalized_absolute_error" value="false"/>
+            <parameter key="root_mean_squared_error" value="false"/>
+            <parameter key="root_relative_squared_error" value="false"/>
+            <parameter key="squared_error" value="false"/>
+            <parameter key="correlation" value="false"/>
+            <parameter key="squared_correlation" value="false"/>
+            <parameter key="cross-entropy" value="false"/>
+            <parameter key="margin" value="false"/>
+            <parameter key="soft_margin_loss" value="false"/>
+            <parameter key="logistic_loss" value="false"/>
+            <parameter key="skip_undefined_labels" value="true"/>
+            <parameter key="use_example_weights" value="true"/>
+            <list key="class_weights"/>
+          </operator>
+          <connect from_port="model" to_op="Apply Model (11)" to_port="model"/>
+          <connect from_port="test set" to_op="Apply Model (11)" to_port="unlabelled data"/>
+          <connect from_op="Apply Model (11)" from_port="labelled data" to_op="Performance (7)" to_port="labelled data"/>
+          <connect from_op="Performance (7)" from_port="performance" to_port="performance 1"/>
+          <connect from_op="Performance (7)" from_port="example set" to_port="test set results"/>
+          <portSpacing port="source_model" spacing="0"/>
+          <portSpacing port="source_test set" spacing="0"/>
+          <portSpacing port="source_through 1" spacing="0"/>
+          <portSpacing port="sink_test set results" spacing="0"/>
+          <portSpacing port="sink_performance 1" spacing="0"/>
+          <portSpacing port="sink_performance 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="concurrency:cross_validation" compatibility="10.1.002" expanded="true" height="145" name="Cross Validation (5)" width="90" x="581" y="850">
+        <parameter key="split_on_batch_attribute" value="false"/>
+        <parameter key="leave_one_out" value="false"/>
+        <parameter key="number_of_folds" value="10"/>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <parameter key="enable_parallel_execution" value="true"/>
+        <process expanded="true">
+          <operator activated="true" class="adaboost" compatibility="10.1.002" expanded="true" height="82" name="AdaBoost" width="90" x="179" y="34">
+            <parameter key="iterations" value="10"/>
+            <process expanded="true">
+              <operator activated="true" class="k_nn" compatibility="10.1.002" expanded="true" height="82" name="k-NN (3)" width="90" x="179" y="34">
+                <parameter key="k" value="2"/>
+                <parameter key="weighted_vote" value="true"/>
+                <parameter key="measure_types" value="MixedMeasures"/>
+                <parameter key="mixed_measure" value="MixedEuclideanDistance"/>
+                <parameter key="nominal_measure" value="NominalDistance"/>
+                <parameter key="numerical_measure" value="EuclideanDistance"/>
+                <parameter key="divergence" value="GeneralizedIDivergence"/>
+                <parameter key="kernel_type" value="radial"/>
+                <parameter key="kernel_gamma" value="1.0"/>
+                <parameter key="kernel_sigma1" value="1.0"/>
+                <parameter key="kernel_sigma2" value="0.0"/>
+                <parameter key="kernel_sigma3" value="2.0"/>
+                <parameter key="kernel_degree" value="3.0"/>
+                <parameter key="kernel_shift" value="1.0"/>
+                <parameter key="kernel_a" value="1.0"/>
+                <parameter key="kernel_b" value="0.0"/>
+              </operator>
+              <connect from_port="training set" to_op="k-NN (3)" to_port="training set"/>
+              <connect from_op="k-NN (3)" from_port="model" to_port="model"/>
+              <portSpacing port="source_training set" spacing="0"/>
+              <portSpacing port="sink_model" spacing="0"/>
+            </process>
+          </operator>
+          <connect from_port="training set" to_op="AdaBoost" to_port="training set"/>
+          <connect from_op="AdaBoost" from_port="model" to_port="model"/>
+          <portSpacing port="source_training set" spacing="0"/>
+          <portSpacing port="sink_model" spacing="0"/>
+          <portSpacing port="sink_through 1" spacing="0"/>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (9)" width="90" x="112" y="34">
+            <list key="application_parameters"/>
+          </operator>
+          <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Performance (6)" width="90" x="246" y="34">
+            <parameter key="main_criterion" value="first"/>
+            <parameter key="accuracy" value="true"/>
+            <parameter key="classification_error" value="false"/>
+            <parameter key="kappa" value="false"/>
+            <parameter key="weighted_mean_recall" value="false"/>
+            <parameter key="weighted_mean_precision" value="false"/>
+            <parameter key="spearman_rho" value="false"/>
+            <parameter key="kendall_tau" value="false"/>
+            <parameter key="absolute_error" value="false"/>
+            <parameter key="relative_error" value="false"/>
+            <parameter key="relative_error_lenient" value="false"/>
+            <parameter key="relative_error_strict" value="false"/>
+            <parameter key="normalized_absolute_error" value="false"/>
+            <parameter key="root_mean_squared_error" value="false"/>
+            <parameter key="root_relative_squared_error" value="false"/>
+            <parameter key="squared_error" value="false"/>
+            <parameter key="correlation" value="false"/>
+            <parameter key="squared_correlation" value="false"/>
+            <parameter key="cross-entropy" value="false"/>
+            <parameter key="margin" value="false"/>
+            <parameter key="soft_margin_loss" value="false"/>
+            <parameter key="logistic_loss" value="false"/>
+            <parameter key="skip_undefined_labels" value="true"/>
+            <parameter key="use_example_weights" value="true"/>
+            <list key="class_weights"/>
+          </operator>
+          <connect from_port="model" to_op="Apply Model (9)" to_port="model"/>
+          <connect from_port="test set" to_op="Apply Model (9)" to_port="unlabelled data"/>
+          <connect from_op="Apply Model (9)" from_port="labelled data" to_op="Performance (6)" to_port="labelled data"/>
+          <connect from_op="Performance (6)" from_port="performance" to_port="performance 1"/>
+          <connect from_op="Performance (6)" from_port="example set" to_port="test set results"/>
+          <portSpacing port="source_model" spacing="0"/>
+          <portSpacing port="source_test set" spacing="0"/>
+          <portSpacing port="source_through 1" spacing="0"/>
+          <portSpacing port="sink_test set results" spacing="0"/>
+          <portSpacing port="sink_performance 1" spacing="0"/>
+          <portSpacing port="sink_performance 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="concurrency:cross_validation" compatibility="10.1.002" expanded="true" height="145" name="Cross Validation (4)" width="90" x="581" y="646">
+        <parameter key="split_on_batch_attribute" value="false"/>
+        <parameter key="leave_one_out" value="false"/>
+        <parameter key="number_of_folds" value="10"/>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <parameter key="enable_parallel_execution" value="true"/>
+        <process expanded="true">
+          <operator activated="true" class="bagging" compatibility="10.1.002" expanded="true" height="82" name="Bagging (3)" width="90" x="112" y="34">
+            <parameter key="sample_ratio" value="0.9"/>
+            <parameter key="iterations" value="10"/>
+            <parameter key="average_confidences" value="true"/>
+            <parameter key="use_local_random_seed" value="false"/>
+            <parameter key="local_random_seed" value="1992"/>
+            <process expanded="true">
+              <operator activated="true" class="naive_bayes" compatibility="10.1.002" expanded="true" height="82" name="Naive Bayes (2)" width="90" x="246" y="85">
+                <parameter key="laplace_correction" value="true"/>
+              </operator>
+              <connect from_port="training set" to_op="Naive Bayes (2)" to_port="training set"/>
+              <connect from_op="Naive Bayes (2)" from_port="model" to_port="model"/>
+              <portSpacing port="source_training set" spacing="0"/>
+              <portSpacing port="sink_model" spacing="0"/>
+            </process>
+          </operator>
+          <connect from_port="training set" to_op="Bagging (3)" to_port="training set"/>
+          <connect from_op="Bagging (3)" from_port="model" to_port="model"/>
+          <portSpacing port="source_training set" spacing="0"/>
+          <portSpacing port="sink_model" spacing="0"/>
+          <portSpacing port="sink_through 1" spacing="0"/>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (7)" width="90" x="112" y="34">
+            <list key="application_parameters"/>
+          </operator>
+          <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Performance (5)" width="90" x="246" y="34">
+            <parameter key="main_criterion" value="first"/>
+            <parameter key="accuracy" value="true"/>
+            <parameter key="classification_error" value="false"/>
+            <parameter key="kappa" value="false"/>
+            <parameter key="weighted_mean_recall" value="false"/>
+            <parameter key="weighted_mean_precision" value="false"/>
+            <parameter key="spearman_rho" value="false"/>
+            <parameter key="kendall_tau" value="false"/>
+            <parameter key="absolute_error" value="false"/>
+            <parameter key="relative_error" value="false"/>
+            <parameter key="relative_error_lenient" value="false"/>
+            <parameter key="relative_error_strict" value="false"/>
+            <parameter key="normalized_absolute_error" value="false"/>
+            <parameter key="root_mean_squared_error" value="false"/>
+            <parameter key="root_relative_squared_error" value="false"/>
+            <parameter key="squared_error" value="false"/>
+            <parameter key="correlation" value="false"/>
+            <parameter key="squared_correlation" value="false"/>
+            <parameter key="cross-entropy" value="false"/>
+            <parameter key="margin" value="false"/>
+            <parameter key="soft_margin_loss" value="false"/>
+            <parameter key="logistic_loss" value="false"/>
+            <parameter key="skip_undefined_labels" value="true"/>
+            <parameter key="use_example_weights" value="true"/>
+            <list key="class_weights"/>
+          </operator>
+          <connect from_port="model" to_op="Apply Model (7)" to_port="model"/>
+          <connect from_port="test set" to_op="Apply Model (7)" to_port="unlabelled data"/>
+          <connect from_op="Apply Model (7)" from_port="labelled data" to_op="Performance (5)" to_port="labelled data"/>
+          <connect from_op="Performance (5)" from_port="performance" to_port="performance 1"/>
+          <connect from_op="Performance (5)" from_port="example set" to_port="test set results"/>
+          <portSpacing port="source_model" spacing="0"/>
+          <portSpacing port="source_test set" spacing="0"/>
+          <portSpacing port="source_through 1" spacing="0"/>
+          <portSpacing port="sink_test set results" spacing="0"/>
+          <portSpacing port="sink_performance 1" spacing="0"/>
+          <portSpacing port="sink_performance 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="concurrency:cross_validation" compatibility="10.1.002" expanded="true" height="145" name="Cross Validation (3)" width="90" x="581" y="442">
+        <parameter key="split_on_batch_attribute" value="false"/>
+        <parameter key="leave_one_out" value="false"/>
+        <parameter key="number_of_folds" value="10"/>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <parameter key="enable_parallel_execution" value="true"/>
+        <process expanded="true">
+          <operator activated="true" class="bagging" compatibility="10.1.002" expanded="true" height="82" name="Bagging (2)" width="90" x="112" y="34">
+            <parameter key="sample_ratio" value="0.9"/>
+            <parameter key="iterations" value="10"/>
+            <parameter key="average_confidences" value="true"/>
+            <parameter key="use_local_random_seed" value="false"/>
+            <parameter key="local_random_seed" value="1992"/>
+            <process expanded="true">
+              <operator activated="true" class="concurrency:parallel_decision_tree" compatibility="10.1.002" expanded="true" height="103" name="Decision Tree" width="90" x="313" y="85">
+                <parameter key="criterion" value="gain_ratio"/>
+                <parameter key="maximal_depth" value="50"/>
+                <parameter key="apply_pruning" value="true"/>
+                <parameter key="confidence" value="0.1"/>
+                <parameter key="apply_prepruning" value="true"/>
+                <parameter key="minimal_gain" value="0.01"/>
+                <parameter key="minimal_leaf_size" value="1"/>
+                <parameter key="minimal_size_for_split" value="4"/>
+                <parameter key="number_of_prepruning_alternatives" value="3"/>
+              </operator>
+              <connect from_port="training set" to_op="Decision Tree" to_port="training set"/>
+              <connect from_op="Decision Tree" from_port="model" to_port="model"/>
+              <portSpacing port="source_training set" spacing="0"/>
+              <portSpacing port="sink_model" spacing="0"/>
+            </process>
+          </operator>
+          <connect from_port="training set" to_op="Bagging (2)" to_port="training set"/>
+          <connect from_op="Bagging (2)" from_port="model" to_port="model"/>
+          <portSpacing port="source_training set" spacing="0"/>
+          <portSpacing port="sink_model" spacing="0"/>
+          <portSpacing port="sink_through 1" spacing="0"/>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (6)" width="90" x="112" y="34">
+            <list key="application_parameters"/>
+          </operator>
+          <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Performance (4)" width="90" x="246" y="34">
+            <parameter key="main_criterion" value="first"/>
+            <parameter key="accuracy" value="true"/>
+            <parameter key="classification_error" value="false"/>
+            <parameter key="kappa" value="false"/>
+            <parameter key="weighted_mean_recall" value="false"/>
+            <parameter key="weighted_mean_precision" value="false"/>
+            <parameter key="spearman_rho" value="false"/>
+            <parameter key="kendall_tau" value="false"/>
+            <parameter key="absolute_error" value="false"/>
+            <parameter key="relative_error" value="false"/>
+            <parameter key="relative_error_lenient" value="false"/>
+            <parameter key="relative_error_strict" value="false"/>
+            <parameter key="normalized_absolute_error" value="false"/>
+            <parameter key="root_mean_squared_error" value="false"/>
+            <parameter key="root_relative_squared_error" value="false"/>
+            <parameter key="squared_error" value="false"/>
+            <parameter key="correlation" value="false"/>
+            <parameter key="squared_correlation" value="false"/>
+            <parameter key="cross-entropy" value="false"/>
+            <parameter key="margin" value="false"/>
+            <parameter key="soft_margin_loss" value="false"/>
+            <parameter key="logistic_loss" value="false"/>
+            <parameter key="skip_undefined_labels" value="true"/>
+            <parameter key="use_example_weights" value="true"/>
+            <list key="class_weights"/>
+          </operator>
+          <connect from_port="model" to_op="Apply Model (6)" to_port="model"/>
+          <connect from_port="test set" to_op="Apply Model (6)" to_port="unlabelled data"/>
+          <connect from_op="Apply Model (6)" from_port="labelled data" to_op="Performance (4)" to_port="labelled data"/>
+          <connect from_op="Performance (4)" from_port="performance" to_port="performance 1"/>
+          <connect from_op="Performance (4)" from_port="example set" to_port="test set results"/>
+          <portSpacing port="source_model" spacing="0"/>
+          <portSpacing port="source_test set" spacing="0"/>
+          <portSpacing port="source_through 1" spacing="0"/>
+          <portSpacing port="sink_test set results" spacing="0"/>
+          <portSpacing port="sink_performance 1" spacing="0"/>
+          <portSpacing port="sink_performance 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="concurrency:cross_validation" compatibility="10.1.002" expanded="true" height="145" name="Cross Validation (2)" width="90" x="581" y="238">
+        <parameter key="split_on_batch_attribute" value="false"/>
+        <parameter key="leave_one_out" value="false"/>
+        <parameter key="number_of_folds" value="10"/>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <parameter key="enable_parallel_execution" value="true"/>
+        <process expanded="true">
+          <operator activated="true" class="bagging" compatibility="10.1.002" expanded="true" height="82" name="Bagging" width="90" x="112" y="34">
+            <parameter key="sample_ratio" value="0.9"/>
+            <parameter key="iterations" value="10"/>
+            <parameter key="average_confidences" value="true"/>
+            <parameter key="use_local_random_seed" value="false"/>
+            <parameter key="local_random_seed" value="1992"/>
+            <process expanded="true">
+              <operator activated="true" class="k_nn" compatibility="10.1.002" expanded="true" height="82" name="k-NN" width="90" x="313" y="34">
+                <parameter key="k" value="2"/>
+                <parameter key="weighted_vote" value="true"/>
+                <parameter key="measure_types" value="MixedMeasures"/>
+                <parameter key="mixed_measure" value="MixedEuclideanDistance"/>
+                <parameter key="nominal_measure" value="NominalDistance"/>
+                <parameter key="numerical_measure" value="EuclideanDistance"/>
+                <parameter key="divergence" value="GeneralizedIDivergence"/>
+                <parameter key="kernel_type" value="radial"/>
+                <parameter key="kernel_gamma" value="1.0"/>
+                <parameter key="kernel_sigma1" value="1.0"/>
+                <parameter key="kernel_sigma2" value="0.0"/>
+                <parameter key="kernel_sigma3" value="2.0"/>
+                <parameter key="kernel_degree" value="3.0"/>
+                <parameter key="kernel_shift" value="1.0"/>
+                <parameter key="kernel_a" value="1.0"/>
+                <parameter key="kernel_b" value="0.0"/>
+              </operator>
+              <connect from_port="training set" to_op="k-NN" to_port="training set"/>
+              <connect from_op="k-NN" from_port="model" to_port="model"/>
+              <portSpacing port="source_training set" spacing="0"/>
+              <portSpacing port="sink_model" spacing="0"/>
+            </process>
+          </operator>
+          <connect from_port="training set" to_op="Bagging" to_port="training set"/>
+          <connect from_op="Bagging" from_port="model" to_port="model"/>
+          <portSpacing port="source_training set" spacing="0"/>
+          <portSpacing port="sink_model" spacing="0"/>
+          <portSpacing port="sink_through 1" spacing="0"/>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (3)" width="90" x="112" y="34">
+            <list key="application_parameters"/>
+          </operator>
+          <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Performance (3)" width="90" x="246" y="34">
+            <parameter key="main_criterion" value="first"/>
+            <parameter key="accuracy" value="true"/>
+            <parameter key="classification_error" value="false"/>
+            <parameter key="kappa" value="false"/>
+            <parameter key="weighted_mean_recall" value="false"/>
+            <parameter key="weighted_mean_precision" value="false"/>
+            <parameter key="spearman_rho" value="false"/>
+            <parameter key="kendall_tau" value="false"/>
+            <parameter key="absolute_error" value="false"/>
+            <parameter key="relative_error" value="false"/>
+            <parameter key="relative_error_lenient" value="false"/>
+            <parameter key="relative_error_strict" value="false"/>
+            <parameter key="normalized_absolute_error" value="false"/>
+            <parameter key="root_mean_squared_error" value="false"/>
+            <parameter key="root_relative_squared_error" value="false"/>
+            <parameter key="squared_error" value="false"/>
+            <parameter key="correlation" value="false"/>
+            <parameter key="squared_correlation" value="false"/>
+            <parameter key="cross-entropy" value="false"/>
+            <parameter key="margin" value="false"/>
+            <parameter key="soft_margin_loss" value="false"/>
+            <parameter key="logistic_loss" value="false"/>
+            <parameter key="skip_undefined_labels" value="true"/>
+            <parameter key="use_example_weights" value="true"/>
+            <list key="class_weights"/>
+          </operator>
+          <connect from_port="model" to_op="Apply Model (3)" to_port="model"/>
+          <connect from_port="test set" to_op="Apply Model (3)" to_port="unlabelled data"/>
+          <connect from_op="Apply Model (3)" from_port="labelled data" to_op="Performance (3)" to_port="labelled data"/>
+          <connect from_op="Performance (3)" from_port="performance" to_port="performance 1"/>
+          <connect from_op="Performance (3)" from_port="example set" to_port="test set results"/>
+          <portSpacing port="source_model" spacing="0"/>
+          <portSpacing port="source_test set" spacing="0"/>
+          <portSpacing port="source_through 1" spacing="0"/>
+          <portSpacing port="sink_test set results" spacing="0"/>
+          <portSpacing port="sink_performance 1" spacing="0"/>
+          <portSpacing port="sink_performance 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="concurrency:cross_validation" compatibility="10.1.002" expanded="true" height="145" name="Cross Validation (7)" width="90" x="581" y="1258">
+        <parameter key="split_on_batch_attribute" value="false"/>
+        <parameter key="leave_one_out" value="false"/>
+        <parameter key="number_of_folds" value="10"/>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <parameter key="enable_parallel_execution" value="true"/>
+        <process expanded="true">
+          <operator activated="true" class="stacking" compatibility="10.1.002" expanded="true" height="68" name="Stacking" width="90" x="179" y="34">
+            <parameter key="keep_all_attributes" value="true"/>
+            <parameter key="keep_confidences" value="true"/>
+            <process expanded="true">
+              <operator activated="true" class="concurrency:parallel_decision_tree" compatibility="10.1.002" expanded="true" height="103" name="Decision Tree (4)" width="90" x="179" y="34">
+                <parameter key="criterion" value="gain_ratio"/>
+                <parameter key="maximal_depth" value="52"/>
+                <parameter key="apply_pruning" value="true"/>
+                <parameter key="confidence" value="0.1"/>
+                <parameter key="apply_prepruning" value="true"/>
+                <parameter key="minimal_gain" value="0.01"/>
+                <parameter key="minimal_leaf_size" value="2"/>
+                <parameter key="minimal_size_for_split" value="4"/>
+                <parameter key="number_of_prepruning_alternatives" value="3"/>
+              </operator>
+              <operator activated="true" class="k_nn" compatibility="10.1.002" expanded="true" height="82" name="k-NN (4)" width="90" x="179" y="136">
+                <parameter key="k" value="2"/>
+                <parameter key="weighted_vote" value="true"/>
+                <parameter key="measure_types" value="MixedMeasures"/>
+                <parameter key="mixed_measure" value="MixedEuclideanDistance"/>
+                <parameter key="nominal_measure" value="NominalDistance"/>
+                <parameter key="numerical_measure" value="EuclideanDistance"/>
+                <parameter key="divergence" value="GeneralizedIDivergence"/>
+                <parameter key="kernel_type" value="radial"/>
+                <parameter key="kernel_gamma" value="1.0"/>
+                <parameter key="kernel_sigma1" value="1.0"/>
+                <parameter key="kernel_sigma2" value="0.0"/>
+                <parameter key="kernel_sigma3" value="2.0"/>
+                <parameter key="kernel_degree" value="3.0"/>
+                <parameter key="kernel_shift" value="1.0"/>
+                <parameter key="kernel_a" value="1.0"/>
+                <parameter key="kernel_b" value="0.0"/>
+              </operator>
+              <operator activated="true" class="classification_by_regression" compatibility="10.1.002" expanded="true" height="82" name="Classification by Regression (2)" width="90" x="179" y="238">
+                <process expanded="true">
+                  <operator activated="true" class="support_vector_machine" compatibility="10.1.002" expanded="true" height="124" name="SVM (2)" width="90" x="179" y="238">
+                    <parameter key="kernel_type" value="dot"/>
+                    <parameter key="kernel_gamma" value="1.0"/>
+                    <parameter key="kernel_sigma1" value="1.0"/>
+                    <parameter key="kernel_sigma2" value="0.0"/>
+                    <parameter key="kernel_sigma3" value="2.0"/>
+                    <parameter key="kernel_shift" value="1.0"/>
+                    <parameter key="kernel_degree" value="2.0"/>
+                    <parameter key="kernel_a" value="1.0"/>
+                    <parameter key="kernel_b" value="0.0"/>
+                    <parameter key="kernel_cache" value="200"/>
+                    <parameter key="C" value="0.0"/>
+                    <parameter key="convergence_epsilon" value="0.001"/>
+                    <parameter key="max_iterations" value="100000"/>
+                    <parameter key="scale" value="true"/>
+                    <parameter key="calculate_weights" value="true"/>
+                    <parameter key="return_optimization_performance" value="true"/>
+                    <parameter key="L_pos" value="1.0"/>
+                    <parameter key="L_neg" value="1.0"/>
+                    <parameter key="epsilon" value="0.0"/>
+                    <parameter key="epsilon_plus" value="0.0"/>
+                    <parameter key="epsilon_minus" value="0.0"/>
+                    <parameter key="balance_cost" value="false"/>
+                    <parameter key="quadratic_loss_pos" value="false"/>
+                    <parameter key="quadratic_loss_neg" value="false"/>
+                    <parameter key="estimate_performance" value="false"/>
+                  </operator>
+                  <connect from_port="training set" to_op="SVM (2)" to_port="training set"/>
+                  <connect from_op="SVM (2)" from_port="model" to_port="model"/>
+                  <portSpacing port="source_training set" spacing="0"/>
+                  <portSpacing port="sink_model" spacing="0"/>
+                </process>
+              </operator>
+              <operator activated="true" class="naive_bayes" compatibility="10.1.002" expanded="true" height="82" name="Naive Bayes (3)" width="90" x="179" y="340">
+                <parameter key="laplace_correction" value="true"/>
+              </operator>
+              <connect from_port="training set 1" to_op="Decision Tree (4)" to_port="training set"/>
+              <connect from_port="training set 2" to_op="k-NN (4)" to_port="training set"/>
+              <connect from_port="training set 3" to_op="Classification by Regression (2)" to_port="training set"/>
+              <connect from_port="training set 4" to_op="Naive Bayes (3)" to_port="training set"/>
+              <connect from_op="Decision Tree (4)" from_port="model" to_port="base model 1"/>
+              <connect from_op="k-NN (4)" from_port="model" to_port="base model 2"/>
+              <connect from_op="Classification by Regression (2)" from_port="model" to_port="base model 3"/>
+              <connect from_op="Naive Bayes (3)" from_port="model" to_port="base model 4"/>
+              <portSpacing port="source_training set 1" spacing="0"/>
+              <portSpacing port="source_training set 2" spacing="0"/>
+              <portSpacing port="source_training set 3" spacing="0"/>
+              <portSpacing port="source_training set 4" spacing="0"/>
+              <portSpacing port="source_training set 5" spacing="0"/>
+              <portSpacing port="sink_base model 1" spacing="0"/>
+              <portSpacing port="sink_base model 2" spacing="0"/>
+              <portSpacing port="sink_base model 3" spacing="0"/>
+              <portSpacing port="sink_base model 4" spacing="0"/>
+              <portSpacing port="sink_base model 5" spacing="0"/>
+            </process>
+            <process expanded="true">
+              <operator activated="true" class="concurrency:parallel_decision_tree" compatibility="10.1.002" expanded="true" height="103" name="Decision Tree (5)" width="90" x="112" y="85">
+                <parameter key="criterion" value="gain_ratio"/>
+                <parameter key="maximal_depth" value="52"/>
+                <parameter key="apply_pruning" value="true"/>
+                <parameter key="confidence" value="0.1"/>
+                <parameter key="apply_prepruning" value="true"/>
+                <parameter key="minimal_gain" value="0.01"/>
+                <parameter key="minimal_leaf_size" value="2"/>
+                <parameter key="minimal_size_for_split" value="4"/>
+                <parameter key="number_of_prepruning_alternatives" value="3"/>
+              </operator>
+              <connect from_port="stacking examples" to_op="Decision Tree (5)" to_port="training set"/>
+              <connect from_op="Decision Tree (5)" from_port="model" to_port="stacking model"/>
+              <portSpacing port="source_stacking examples" spacing="0"/>
+              <portSpacing port="sink_stacking model" spacing="0"/>
+            </process>
+          </operator>
+          <connect from_port="training set" to_op="Stacking" to_port="training set"/>
+          <connect from_op="Stacking" from_port="model" to_port="model"/>
+          <portSpacing port="source_training set" spacing="0"/>
+          <portSpacing port="sink_model" spacing="0"/>
+          <portSpacing port="sink_through 1" spacing="0"/>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (14)" width="90" x="45" y="34">
+            <list key="application_parameters"/>
+          </operator>
+          <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Performance (8)" width="90" x="179" y="34">
+            <parameter key="main_criterion" value="first"/>
+            <parameter key="accuracy" value="true"/>
+            <parameter key="classification_error" value="false"/>
+            <parameter key="kappa" value="false"/>
+            <parameter key="weighted_mean_recall" value="false"/>
+            <parameter key="weighted_mean_precision" value="false"/>
+            <parameter key="spearman_rho" value="false"/>
+            <parameter key="kendall_tau" value="false"/>
+            <parameter key="absolute_error" value="false"/>
+            <parameter key="relative_error" value="false"/>
+            <parameter key="relative_error_lenient" value="false"/>
+            <parameter key="relative_error_strict" value="false"/>
+            <parameter key="normalized_absolute_error" value="false"/>
+            <parameter key="root_mean_squared_error" value="false"/>
+            <parameter key="root_relative_squared_error" value="false"/>
+            <parameter key="squared_error" value="false"/>
+            <parameter key="correlation" value="false"/>
+            <parameter key="squared_correlation" value="false"/>
+            <parameter key="cross-entropy" value="false"/>
+            <parameter key="margin" value="false"/>
+            <parameter key="soft_margin_loss" value="false"/>
+            <parameter key="logistic_loss" value="false"/>
+            <parameter key="skip_undefined_labels" value="true"/>
+            <parameter key="use_example_weights" value="true"/>
+            <list key="class_weights"/>
+          </operator>
+          <connect from_port="model" to_op="Apply Model (14)" to_port="model"/>
+          <connect from_port="test set" to_op="Apply Model (14)" to_port="unlabelled data"/>
+          <connect from_op="Apply Model (14)" from_port="labelled data" to_op="Performance (8)" to_port="labelled data"/>
+          <connect from_op="Performance (8)" from_port="performance" to_port="performance 1"/>
+          <portSpacing port="source_model" spacing="0"/>
+          <portSpacing port="source_test set" spacing="0"/>
+          <portSpacing port="source_through 1" spacing="0"/>
+          <portSpacing port="sink_test set results" spacing="0"/>
+          <portSpacing port="sink_performance 1" spacing="0"/>
+          <portSpacing port="sink_performance 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="concurrency:cross_validation" compatibility="10.1.002" expanded="true" height="145" name="Cross Validation" width="90" x="581" y="34">
+        <parameter key="split_on_batch_attribute" value="false"/>
+        <parameter key="leave_one_out" value="false"/>
+        <parameter key="number_of_folds" value="10"/>
+        <parameter key="sampling_type" value="automatic"/>
+        <parameter key="use_local_random_seed" value="false"/>
+        <parameter key="local_random_seed" value="1992"/>
+        <parameter key="enable_parallel_execution" value="true"/>
+        <process expanded="true">
+          <operator activated="true" class="vote" compatibility="10.1.002" expanded="true" height="68" name="Vote" width="90" x="112" y="34">
+            <process expanded="true">
+              <operator activated="true" class="concurrency:parallel_decision_tree" compatibility="10.1.002" expanded="true" height="103" name="Decision Tree (2)" width="90" x="313" y="34">
+                <parameter key="criterion" value="gain_ratio"/>
+                <parameter key="maximal_depth" value="10"/>
+                <parameter key="apply_pruning" value="true"/>
+                <parameter key="confidence" value="0.1"/>
+                <parameter key="apply_prepruning" value="true"/>
+                <parameter key="minimal_gain" value="0.01"/>
+                <parameter key="minimal_leaf_size" value="2"/>
+                <parameter key="minimal_size_for_split" value="4"/>
+                <parameter key="number_of_prepruning_alternatives" value="3"/>
+              </operator>
+              <operator activated="true" class="k_nn" compatibility="10.1.002" expanded="true" height="82" name="k-NN (2)" width="90" x="313" y="136">
+                <parameter key="k" value="2"/>
+                <parameter key="weighted_vote" value="true"/>
+                <parameter key="measure_types" value="MixedMeasures"/>
+                <parameter key="mixed_measure" value="MixedEuclideanDistance"/>
+                <parameter key="nominal_measure" value="NominalDistance"/>
+                <parameter key="numerical_measure" value="EuclideanDistance"/>
+                <parameter key="divergence" value="GeneralizedIDivergence"/>
+                <parameter key="kernel_type" value="radial"/>
+                <parameter key="kernel_gamma" value="1.0"/>
+                <parameter key="kernel_sigma1" value="1.0"/>
+                <parameter key="kernel_sigma2" value="0.0"/>
+                <parameter key="kernel_sigma3" value="2.0"/>
+                <parameter key="kernel_degree" value="3.0"/>
+                <parameter key="kernel_shift" value="1.0"/>
+                <parameter key="kernel_a" value="1.0"/>
+                <parameter key="kernel_b" value="0.0"/>
+              </operator>
+              <operator activated="true" class="classification_by_regression" compatibility="10.1.002" expanded="true" height="82" name="Classification by Regression" width="90" x="313" y="238">
+                <process expanded="true">
+                  <operator activated="true" class="support_vector_machine" compatibility="10.1.002" expanded="true" height="124" name="SVM" width="90" x="313" y="238">
+                    <parameter key="kernel_type" value="dot"/>
+                    <parameter key="kernel_gamma" value="1.0"/>
+                    <parameter key="kernel_sigma1" value="1.0"/>
+                    <parameter key="kernel_sigma2" value="0.0"/>
+                    <parameter key="kernel_sigma3" value="2.0"/>
+                    <parameter key="kernel_shift" value="1.0"/>
+                    <parameter key="kernel_degree" value="2.0"/>
+                    <parameter key="kernel_a" value="1.0"/>
+                    <parameter key="kernel_b" value="0.0"/>
+                    <parameter key="kernel_cache" value="200"/>
+                    <parameter key="C" value="0.0"/>
+                    <parameter key="convergence_epsilon" value="0.001"/>
+                    <parameter key="max_iterations" value="100000"/>
+                    <parameter key="scale" value="true"/>
+                    <parameter key="calculate_weights" value="true"/>
+                    <parameter key="return_optimization_performance" value="true"/>
+                    <parameter key="L_pos" value="1.0"/>
+                    <parameter key="L_neg" value="1.0"/>
+                    <parameter key="epsilon" value="0.0"/>
+                    <parameter key="epsilon_plus" value="0.0"/>
+                    <parameter key="epsilon_minus" value="0.0"/>
+                    <parameter key="balance_cost" value="false"/>
+                    <parameter key="quadratic_loss_pos" value="false"/>
+                    <parameter key="quadratic_loss_neg" value="false"/>
+                    <parameter key="estimate_performance" value="false"/>
+                  </operator>
+                  <connect from_port="training set" to_op="SVM" to_port="training set"/>
+                  <connect from_op="SVM" from_port="model" to_port="model"/>
+                  <portSpacing port="source_training set" spacing="0"/>
+                  <portSpacing port="sink_model" spacing="0"/>
+                </process>
+              </operator>
+              <operator activated="true" class="naive_bayes" compatibility="10.1.002" expanded="true" height="82" name="Naive Bayes" width="90" x="313" y="340">
+                <parameter key="laplace_correction" value="true"/>
+              </operator>
+              <connect from_port="training set 1" to_op="Decision Tree (2)" to_port="training set"/>
+              <connect from_port="training set 2" to_op="k-NN (2)" to_port="training set"/>
+              <connect from_port="training set 3" to_op="Classification by Regression" to_port="training set"/>
+              <connect from_port="training set 4" to_op="Naive Bayes" to_port="training set"/>
+              <connect from_op="Decision Tree (2)" from_port="model" to_port="base model 1"/>
+              <connect from_op="k-NN (2)" from_port="model" to_port="base model 2"/>
+              <connect from_op="Classification by Regression" from_port="model" to_port="base model 3"/>
+              <connect from_op="Naive Bayes" from_port="model" to_port="base model 4"/>
+              <portSpacing port="source_training set 1" spacing="0"/>
+              <portSpacing port="source_training set 2" spacing="0"/>
+              <portSpacing port="source_training set 3" spacing="0"/>
+              <portSpacing port="source_training set 4" spacing="0"/>
+              <portSpacing port="source_training set 5" spacing="0"/>
+              <portSpacing port="sink_base model 1" spacing="0"/>
+              <portSpacing port="sink_base model 2" spacing="0"/>
+              <portSpacing port="sink_base model 3" spacing="0"/>
+              <portSpacing port="sink_base model 4" spacing="0"/>
+              <portSpacing port="sink_base model 5" spacing="0"/>
+            </process>
+          </operator>
+          <connect from_port="training set" to_op="Vote" to_port="training set"/>
+          <connect from_op="Vote" from_port="model" to_port="model"/>
+          <portSpacing port="source_training set" spacing="0"/>
+          <portSpacing port="sink_model" spacing="0"/>
+          <portSpacing port="sink_through 1" spacing="0"/>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model" width="90" x="112" y="34">
+            <list key="application_parameters"/>
+          </operator>
+          <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Performance" width="90" x="246" y="34">
+            <parameter key="main_criterion" value="first"/>
+            <parameter key="accuracy" value="true"/>
+            <parameter key="classification_error" value="false"/>
+            <parameter key="kappa" value="false"/>
+            <parameter key="weighted_mean_recall" value="false"/>
+            <parameter key="weighted_mean_precision" value="false"/>
+            <parameter key="spearman_rho" value="false"/>
+            <parameter key="kendall_tau" value="false"/>
+            <parameter key="absolute_error" value="false"/>
+            <parameter key="relative_error" value="false"/>
+            <parameter key="relative_error_lenient" value="false"/>
+            <parameter key="relative_error_strict" value="false"/>
+            <parameter key="normalized_absolute_error" value="false"/>
+            <parameter key="root_mean_squared_error" value="false"/>
+            <parameter key="root_relative_squared_error" value="false"/>
+            <parameter key="squared_error" value="false"/>
+            <parameter key="correlation" value="false"/>
+            <parameter key="squared_correlation" value="false"/>
+            <parameter key="cross-entropy" value="false"/>
+            <parameter key="margin" value="false"/>
+            <parameter key="soft_margin_loss" value="false"/>
+            <parameter key="logistic_loss" value="false"/>
+            <parameter key="skip_undefined_labels" value="true"/>
+            <parameter key="use_example_weights" value="true"/>
+            <list key="class_weights"/>
+          </operator>
+          <connect from_port="model" to_op="Apply Model" to_port="model"/>
+          <connect from_port="test set" to_op="Apply Model" to_port="unlabelled data"/>
+          <connect from_op="Apply Model" from_port="labelled data" to_op="Performance" to_port="labelled data"/>
+          <connect from_op="Performance" from_port="performance" to_port="performance 1"/>
+          <connect from_op="Performance" from_port="example set" to_port="test set results"/>
+          <portSpacing port="source_model" spacing="0"/>
+          <portSpacing port="source_test set" spacing="0"/>
+          <portSpacing port="source_through 1" spacing="0"/>
+          <portSpacing port="sink_test set results" spacing="0"/>
+          <portSpacing port="sink_performance 1" spacing="0"/>
+          <portSpacing port="sink_performance 2" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="read_csv" compatibility="10.1.002" expanded="true" height="68" name="Read CSV (2)" width="90" x="45" y="289">
+        <parameter key="csv_file" value="C:\Users\sli02\OneDrive\Skrivbord\Machinelearning\Repo\D0033E-Project\TASK1\test-final-replaced.csv"/>
+        <parameter key="column_separators" value=","/>
+        <parameter key="trim_lines" value="false"/>
+        <parameter key="use_quotes" value="true"/>
+        <parameter key="quotes_character" value="&quot;"/>
+        <parameter key="escape_character" value="\"/>
+        <parameter key="skip_comments" value="true"/>
+        <parameter key="comment_characters" value="#"/>
+        <parameter key="starting_row" value="1"/>
+        <parameter key="parse_numbers" value="true"/>
+        <parameter key="decimal_character" value="."/>
+        <parameter key="grouped_digits" value="false"/>
+        <parameter key="grouping_character" value=","/>
+        <parameter key="infinity_representation" value=""/>
+        <parameter key="date_format" value=""/>
+        <parameter key="first_row_as_names" value="true"/>
+        <list key="annotations"/>
+        <parameter key="time_zone" value="SYSTEM"/>
+        <parameter key="locale" value="English (United States)"/>
+        <parameter key="encoding" value="windows-1252"/>
+        <parameter key="read_all_values_as_polynominal" value="false"/>
+        <list key="data_set_meta_data_information">
+          <parameter key="0" value="Head x.true.real.attribute"/>
+          <parameter key="1" value="Head y.true.real.attribute"/>
+          <parameter key="2" value="Head z.true.real.attribute"/>
+          <parameter key="3" value="Shoulder_Center x.true.real.attribute"/>
+          <parameter key="4" value="Shoulder_Center y.true.real.attribute"/>
+          <parameter key="5" value="Shoulder_Center z.true.real.attribute"/>
+          <parameter key="6" value="Shoulder_Left x.true.real.attribute"/>
+          <parameter key="7" value="Shoulder_Left y.true.real.attribute"/>
+          <parameter key="8" value="Shoulder_Left z.true.real.attribute"/>
+          <parameter key="9" value="Shoulder_Right x.true.real.attribute"/>
+          <parameter key="10" value="Shoulder_Right y.true.real.attribute"/>
+          <parameter key="11" value="Shoulder_Right z.true.real.attribute"/>
+          <parameter key="12" value="Elbow_Left x.true.real.attribute"/>
+          <parameter key="13" value="Elbow_Left y.true.real.attribute"/>
+          <parameter key="14" value="Elbow_Left z.true.real.attribute"/>
+          <parameter key="15" value="Elbow_Right x.true.real.attribute"/>
+          <parameter key="16" value="Elbow_Right y.true.real.attribute"/>
+          <parameter key="17" value="Elbow_Right z.true.real.attribute"/>
+          <parameter key="18" value="Wrist_Left x.true.real.attribute"/>
+          <parameter key="19" value="Wrist_Left y.true.real.attribute"/>
+          <parameter key="20" value="Wrist_Left z.true.real.attribute"/>
+          <parameter key="21" value="Wrist_Right x.true.real.attribute"/>
+          <parameter key="22" value="Wrist_Right y.true.real.attribute"/>
+          <parameter key="23" value="Wrist_Right z.true.real.attribute"/>
+          <parameter key="24" value="Hand_Left x.true.real.attribute"/>
+          <parameter key="25" value="Hand_Left y.true.real.attribute"/>
+          <parameter key="26" value="Hand_Left z.true.real.attribute"/>
+          <parameter key="27" value="Hand_Right x.true.real.attribute"/>
+          <parameter key="28" value="Hand_Right y.true.real.attribute"/>
+          <parameter key="29" value="Hand_Right z.true.real.attribute"/>
+          <parameter key="30" value="Spine x.true.real.attribute"/>
+          <parameter key="31" value="Spine y.true.real.attribute"/>
+          <parameter key="32" value="Spine z.true.real.attribute"/>
+          <parameter key="33" value="Hip_Center x.true.real.attribute"/>
+          <parameter key="34" value="Hip_Center y.true.real.attribute"/>
+          <parameter key="35" value="Hip_Center z.true.real.attribute"/>
+          <parameter key="36" value="Hip_Left x.true.real.attribute"/>
+          <parameter key="37" value="Hip_Left y.true.real.attribute"/>
+          <parameter key="38" value="Hip_Left z.true.real.attribute"/>
+          <parameter key="39" value="Hip_Right x.true.real.attribute"/>
+          <parameter key="40" value="Hip_Right y.true.real.attribute"/>
+          <parameter key="41" value="Hip_Right z.true.real.attribute"/>
+          <parameter key="42" value="Knee_Left x.true.real.attribute"/>
+          <parameter key="43" value="Knee_Left y.true.real.attribute"/>
+          <parameter key="44" value="Knee_Left z.true.real.attribute"/>
+          <parameter key="45" value="Knee_Right x.true.real.attribute"/>
+          <parameter key="46" value="Knee_Right y.true.real.attribute"/>
+          <parameter key="47" value="Knee_Right z.true.real.attribute"/>
+          <parameter key="48" value="Ankle_Left x.true.real.attribute"/>
+          <parameter key="49" value="Ankle_Left y.true.real.attribute"/>
+          <parameter key="50" value="Ankle_Left z.true.real.attribute"/>
+          <parameter key="51" value="Ankle_Right x.true.real.attribute"/>
+          <parameter key="52" value="Ankle_Right y.true.real.attribute"/>
+          <parameter key="53" value="Ankle_Right z.true.real.attribute"/>
+          <parameter key="54" value="Foot_Left x.true.real.attribute"/>
+          <parameter key="55" value="Foot_Left y.true.real.attribute"/>
+          <parameter key="56" value="Foot_Left z.true.real.attribute"/>
+          <parameter key="57" value="Foot_Right x.true.real.attribute"/>
+          <parameter key="58" value="Foot_Right y.true.real.attribute"/>
+          <parameter key="59" value="Foot_Right z.true.real.attribute"/>
+          <parameter key="60" value="Head phi.true.real.attribute"/>
+          <parameter key="61" value="Head theta.true.real.attribute"/>
+          <parameter key="62" value="Head epsilon.true.real.attribute"/>
+          <parameter key="63" value="Shoulder_Center phi.true.real.attribute"/>
+          <parameter key="64" value="Shoulder_Center theta.true.real.attribute"/>
+          <parameter key="65" value="Shoulder_Center epsilon.true.real.attribute"/>
+          <parameter key="66" value="Shoulder_Left phi.true.real.attribute"/>
+          <parameter key="67" value="Shoulder_Left theta.true.real.attribute"/>
+          <parameter key="68" value="Shoulder_Left epsilon.true.real.attribute"/>
+          <parameter key="69" value="Shoulder_Right phi.true.real.attribute"/>
+          <parameter key="70" value="Shoulder_Right theta.true.real.attribute"/>
+          <parameter key="71" value="Shoulder_Right epsilon.true.real.attribute"/>
+          <parameter key="72" value="Elbow_Left phi.true.real.attribute"/>
+          <parameter key="73" value="Elbow_Left theta.true.real.attribute"/>
+          <parameter key="74" value="Elbow_Left epsilon.true.real.attribute"/>
+          <parameter key="75" value="Elbow_Right phi.true.real.attribute"/>
+          <parameter key="76" value="Elbow_Right theta.true.real.attribute"/>
+          <parameter key="77" value="Elbow_Right epsilon.true.real.attribute"/>
+          <parameter key="78" value="Wrist_Left phi.true.real.attribute"/>
+          <parameter key="79" value="Wrist_Left theta.true.real.attribute"/>
+          <parameter key="80" value="Wrist_Left epsilon.true.real.attribute"/>
+          <parameter key="81" value="Wrist_Right phi.true.real.attribute"/>
+          <parameter key="82" value="Wrist_Right theta.true.real.attribute"/>
+          <parameter key="83" value="Wrist_Right epsilon.true.real.attribute"/>
+          <parameter key="84" value="Hand_Left phi.true.real.attribute"/>
+          <parameter key="85" value="Hand_Left theta.true.real.attribute"/>
+          <parameter key="86" value="Hand_Left epsilon.true.real.attribute"/>
+          <parameter key="87" value="Hand_Right phi.true.real.attribute"/>
+          <parameter key="88" value="Hand_Right theta.true.real.attribute"/>
+          <parameter key="89" value="Hand_Right epsilon.true.real.attribute"/>
+          <parameter key="90" value="Spine phi.true.real.attribute"/>
+          <parameter key="91" value="Spine theta.true.real.attribute"/>
+          <parameter key="92" value="Spine epsilon.true.real.attribute"/>
+          <parameter key="93" value="Hip_Center phi.true.real.attribute"/>
+          <parameter key="94" value="Hip_Center theta.true.real.attribute"/>
+          <parameter key="95" value="Hip_Center epsilon.true.real.attribute"/>
+          <parameter key="96" value="Hip_Left phi.true.real.attribute"/>
+          <parameter key="97" value="Hip_Left theta.true.real.attribute"/>
+          <parameter key="98" value="Hip_Left epsilon.true.real.attribute"/>
+          <parameter key="99" value="Hip_Right phi.true.real.attribute"/>
+          <parameter key="100" value="Hip_Right theta.true.real.attribute"/>
+          <parameter key="101" value="Hip_Right epsilon.true.real.attribute"/>
+          <parameter key="102" value="Knee_Left phi.true.real.attribute"/>
+          <parameter key="103" value="Knee_Left theta.true.real.attribute"/>
+          <parameter key="104" value="Knee_Left epsilon.true.real.attribute"/>
+          <parameter key="105" value="Knee_Right phi.true.real.attribute"/>
+          <parameter key="106" value="Knee_Right theta.true.real.attribute"/>
+          <parameter key="107" value="Knee_Right epsilon.true.real.attribute"/>
+          <parameter key="108" value="Ankle_Left phi.true.real.attribute"/>
+          <parameter key="109" value="Ankle_Left theta.true.real.attribute"/>
+          <parameter key="110" value="Ankle_Left epsilon.true.real.attribute"/>
+          <parameter key="111" value="Ankle_Right phi.true.real.attribute"/>
+          <parameter key="112" value="Ankle_Right theta.true.real.attribute"/>
+          <parameter key="113" value="Ankle_Right epsilon.true.real.attribute"/>
+          <parameter key="114" value="Foot_Left phi.true.real.attribute"/>
+          <parameter key="115" value="Foot_Left theta.true.real.attribute"/>
+          <parameter key="116" value="Foot_Left epsilon.true.real.attribute"/>
+          <parameter key="117" value="Foot_Right phi.true.real.attribute"/>
+          <parameter key="118" value="Foot_Right theta.true.real.attribute"/>
+          <parameter key="119" value="Foot_Right epsilon.true.real.attribute"/>
+          <parameter key="120" value="mean Head phi.true.real.attribute"/>
+          <parameter key="121" value="mean Head theta.true.real.attribute"/>
+          <parameter key="122" value="mean Head epsilon.true.real.attribute"/>
+          <parameter key="123" value="mean Shoulder_Center phi.true.real.attribute"/>
+          <parameter key="124" value="mean Shoulder_Center theta.true.real.attribute"/>
+          <parameter key="125" value="mean Shoulder_Center epsilon.true.real.attribute"/>
+          <parameter key="126" value="mean Shoulder_Left phi.true.real.attribute"/>
+          <parameter key="127" value="mean Shoulder_Left theta.true.real.attribute"/>
+          <parameter key="128" value="mean Shoulder_Left epsilon.true.real.attribute"/>
+          <parameter key="129" value="mean Shoulder_Right phi.true.real.attribute"/>
+          <parameter key="130" value="mean Shoulder_Right theta.true.real.attribute"/>
+          <parameter key="131" value="mean Shoulder_Right epsilon.true.real.attribute"/>
+          <parameter key="132" value="mean Elbow_Left phi.true.real.attribute"/>
+          <parameter key="133" value="mean Elbow_Left theta.true.real.attribute"/>
+          <parameter key="134" value="mean Elbow_Left epsilon.true.real.attribute"/>
+          <parameter key="135" value="mean Elbow_Right phi.true.real.attribute"/>
+          <parameter key="136" value="mean Elbow_Right theta.true.real.attribute"/>
+          <parameter key="137" value="mean Elbow_Right epsilon.true.real.attribute"/>
+          <parameter key="138" value="mean Wrist_Left phi.true.real.attribute"/>
+          <parameter key="139" value="mean Wrist_Left theta.true.real.attribute"/>
+          <parameter key="140" value="mean Wrist_Left epsilon.true.real.attribute"/>
+          <parameter key="141" value="mean Wrist_Right phi.true.real.attribute"/>
+          <parameter key="142" value="mean Wrist_Right theta.true.real.attribute"/>
+          <parameter key="143" value="mean Wrist_Right epsilon.true.real.attribute"/>
+          <parameter key="144" value="mean Hand_Left phi.true.real.attribute"/>
+          <parameter key="145" value="mean Hand_Left theta.true.real.attribute"/>
+          <parameter key="146" value="mean Hand_Left epsilon.true.real.attribute"/>
+          <parameter key="147" value="mean Hand_Right phi.true.real.attribute"/>
+          <parameter key="148" value="mean Hand_Right theta.true.real.attribute"/>
+          <parameter key="149" value="mean Hand_Right epsilon.true.real.attribute"/>
+          <parameter key="150" value="mean Spine phi.true.real.attribute"/>
+          <parameter key="151" value="mean Spine theta.true.real.attribute"/>
+          <parameter key="152" value="mean Spine epsilon.true.real.attribute"/>
+          <parameter key="153" value="mean Hip_Center phi.true.real.attribute"/>
+          <parameter key="154" value="mean Hip_Center theta.true.real.attribute"/>
+          <parameter key="155" value="mean Hip_Center epsilon.true.real.attribute"/>
+          <parameter key="156" value="mean Hip_Left phi.true.real.attribute"/>
+          <parameter key="157" value="mean Hip_Left theta.true.real.attribute"/>
+          <parameter key="158" value="mean Hip_Left epsilon.true.real.attribute"/>
+          <parameter key="159" value="mean Hip_Right phi.true.real.attribute"/>
+          <parameter key="160" value="mean Hip_Right theta.true.real.attribute"/>
+          <parameter key="161" value="mean Hip_Right epsilon.true.real.attribute"/>
+          <parameter key="162" value="mean Knee_Left phi.true.real.attribute"/>
+          <parameter key="163" value="mean Knee_Left theta.true.real.attribute"/>
+          <parameter key="164" value="mean Knee_Left epsilon.true.real.attribute"/>
+          <parameter key="165" value="mean Knee_Right phi.true.real.attribute"/>
+          <parameter key="166" value="mean Knee_Right theta.true.real.attribute"/>
+          <parameter key="167" value="mean Knee_Right epsilon.true.real.attribute"/>
+          <parameter key="168" value="mean Ankle_Left phi.true.real.attribute"/>
+          <parameter key="169" value="mean Ankle_Left theta.true.real.attribute"/>
+          <parameter key="170" value="mean Ankle_Left epsilon.true.real.attribute"/>
+          <parameter key="171" value="mean Ankle_Right phi.true.real.attribute"/>
+          <parameter key="172" value="mean Ankle_Right theta.true.real.attribute"/>
+          <parameter key="173" value="mean Ankle_Right epsilon.true.real.attribute"/>
+          <parameter key="174" value="mean Foot_Left phi.true.real.attribute"/>
+          <parameter key="175" value="mean Foot_Left theta.true.real.attribute"/>
+          <parameter key="176" value="mean Foot_Left epsilon.true.real.attribute"/>
+          <parameter key="177" value="mean Foot_Right phi.true.real.attribute"/>
+          <parameter key="178" value="mean Foot_Right theta.true.real.attribute"/>
+          <parameter key="179" value="mean Foot_Right epsilon.true.real.attribute"/>
+          <parameter key="180" value="std Head phi.true.real.attribute"/>
+          <parameter key="181" value="std Head theta.true.real.attribute"/>
+          <parameter key="182" value="std Head epsilon.true.real.attribute"/>
+          <parameter key="183" value="std Shoulder_Center phi.true.real.attribute"/>
+          <parameter key="184" value="std Shoulder_Center theta.true.real.attribute"/>
+          <parameter key="185" value="std Shoulder_Center epsilon.true.real.attribute"/>
+          <parameter key="186" value="std Shoulder_Left phi.true.real.attribute"/>
+          <parameter key="187" value="std Shoulder_Left theta.true.real.attribute"/>
+          <parameter key="188" value="std Shoulder_Left epsilon.true.real.attribute"/>
+          <parameter key="189" value="std Shoulder_Right phi.true.real.attribute"/>
+          <parameter key="190" value="std Shoulder_Right theta.true.real.attribute"/>
+          <parameter key="191" value="std Shoulder_Right epsilon.true.real.attribute"/>
+          <parameter key="192" value="std Elbow_Left phi.true.real.attribute"/>
+          <parameter key="193" value="std Elbow_Left theta.true.real.attribute"/>
+          <parameter key="194" value="std Elbow_Left epsilon.true.real.attribute"/>
+          <parameter key="195" value="std Elbow_Right phi.true.real.attribute"/>
+          <parameter key="196" value="std Elbow_Right theta.true.real.attribute"/>
+          <parameter key="197" value="std Elbow_Right epsilon.true.real.attribute"/>
+          <parameter key="198" value="std Wrist_Left phi.true.real.attribute"/>
+          <parameter key="199" value="std Wrist_Left theta.true.real.attribute"/>
+          <parameter key="200" value="std Wrist_Left epsilon.true.real.attribute"/>
+          <parameter key="201" value="std Wrist_Right phi.true.real.attribute"/>
+          <parameter key="202" value="std Wrist_Right theta.true.real.attribute"/>
+          <parameter key="203" value="std Wrist_Right epsilon.true.real.attribute"/>
+          <parameter key="204" value="std Hand_Left phi.true.real.attribute"/>
+          <parameter key="205" value="std Hand_Left theta.true.real.attribute"/>
+          <parameter key="206" value="std Hand_Left epsilon.true.real.attribute"/>
+          <parameter key="207" value="std Hand_Right phi.true.real.attribute"/>
+          <parameter key="208" value="std Hand_Right theta.true.real.attribute"/>
+          <parameter key="209" value="std Hand_Right epsilon.true.real.attribute"/>
+          <parameter key="210" value="std Spine phi.true.real.attribute"/>
+          <parameter key="211" value="std Spine theta.true.real.attribute"/>
+          <parameter key="212" value="std Spine epsilon.true.real.attribute"/>
+          <parameter key="213" value="std Hip_Center phi.true.real.attribute"/>
+          <parameter key="214" value="std Hip_Center theta.true.real.attribute"/>
+          <parameter key="215" value="std Hip_Center epsilon.true.real.attribute"/>
+          <parameter key="216" value="std Hip_Left phi.true.real.attribute"/>
+          <parameter key="217" value="std Hip_Left theta.true.real.attribute"/>
+          <parameter key="218" value="std Hip_Left epsilon.true.real.attribute"/>
+          <parameter key="219" value="std Hip_Right phi.true.real.attribute"/>
+          <parameter key="220" value="std Hip_Right theta.true.real.attribute"/>
+          <parameter key="221" value="std Hip_Right epsilon.true.real.attribute"/>
+          <parameter key="222" value="std Knee_Left phi.true.real.attribute"/>
+          <parameter key="223" value="std Knee_Left theta.true.real.attribute"/>
+          <parameter key="224" value="std Knee_Left epsilon.true.real.attribute"/>
+          <parameter key="225" value="std Knee_Right phi.true.real.attribute"/>
+          <parameter key="226" value="std Knee_Right theta.true.real.attribute"/>
+          <parameter key="227" value="std Knee_Right epsilon.true.real.attribute"/>
+          <parameter key="228" value="std Ankle_Left phi.true.real.attribute"/>
+          <parameter key="229" value="std Ankle_Left theta.true.real.attribute"/>
+          <parameter key="230" value="std Ankle_Left epsilon.true.real.attribute"/>
+          <parameter key="231" value="std Ankle_Right phi.true.real.attribute"/>
+          <parameter key="232" value="std Ankle_Right theta.true.real.attribute"/>
+          <parameter key="233" value="std Ankle_Right epsilon.true.real.attribute"/>
+          <parameter key="234" value="std Foot_Left phi.true.real.attribute"/>
+          <parameter key="235" value="std Foot_Left theta.true.real.attribute"/>
+          <parameter key="236" value="std Foot_Left epsilon.true.real.attribute"/>
+          <parameter key="237" value="std Foot_Right phi.true.real.attribute"/>
+          <parameter key="238" value="std Foot_Right theta.true.real.attribute"/>
+          <parameter key="239" value="std Foot_Right epsilon.true.real.attribute"/>
+          <parameter key="240" value="GestureID.true.integer.attribute"/>
+          <parameter key="241" value="Gesture.true.polynominal.attribute"/>
+        </list>
+        <parameter key="read_not_matching_values_as_missings" value="false"/>
+      </operator>
+      <operator activated="true" class="blending:set_role" compatibility="10.1.002" expanded="true" height="82" name="Set Role (2)" width="90" x="179" y="289">
+        <list key="set_roles">
+          <parameter key="Gesture" value="label"/>
+          <parameter key="GestureID" value="id"/>
+        </list>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (15)" width="90" x="313" y="289">
+        <list key="application_parameters"/>
+      </operator>
+      <operator activated="true" class="multiply" compatibility="10.1.002" expanded="true" height="229" name="Multiply (2)" width="90" x="246" y="544"/>
+      <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (12)" width="90" x="715" y="1054">
+        <list key="application_parameters"/>
+      </operator>
+      <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Boosting Decision Tree" width="90" x="849" y="1054">
+        <parameter key="main_criterion" value="first"/>
+        <parameter key="accuracy" value="true"/>
+        <parameter key="classification_error" value="false"/>
+        <parameter key="kappa" value="false"/>
+        <parameter key="weighted_mean_recall" value="false"/>
+        <parameter key="weighted_mean_precision" value="false"/>
+        <parameter key="spearman_rho" value="false"/>
+        <parameter key="kendall_tau" value="false"/>
+        <parameter key="absolute_error" value="false"/>
+        <parameter key="relative_error" value="false"/>
+        <parameter key="relative_error_lenient" value="false"/>
+        <parameter key="relative_error_strict" value="false"/>
+        <parameter key="normalized_absolute_error" value="false"/>
+        <parameter key="root_mean_squared_error" value="false"/>
+        <parameter key="root_relative_squared_error" value="false"/>
+        <parameter key="squared_error" value="false"/>
+        <parameter key="correlation" value="false"/>
+        <parameter key="squared_correlation" value="false"/>
+        <parameter key="cross-entropy" value="false"/>
+        <parameter key="margin" value="false"/>
+        <parameter key="soft_margin_loss" value="false"/>
+        <parameter key="logistic_loss" value="false"/>
+        <parameter key="skip_undefined_labels" value="true"/>
+        <parameter key="use_example_weights" value="true"/>
+        <list key="class_weights"/>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (10)" width="90" x="715" y="850">
+        <list key="application_parameters"/>
+      </operator>
+      <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Boosting KNN" width="90" x="849" y="850">
+        <parameter key="main_criterion" value="first"/>
+        <parameter key="accuracy" value="true"/>
+        <parameter key="classification_error" value="false"/>
+        <parameter key="kappa" value="false"/>
+        <parameter key="weighted_mean_recall" value="false"/>
+        <parameter key="weighted_mean_precision" value="false"/>
+        <parameter key="spearman_rho" value="false"/>
+        <parameter key="kendall_tau" value="false"/>
+        <parameter key="absolute_error" value="false"/>
+        <parameter key="relative_error" value="false"/>
+        <parameter key="relative_error_lenient" value="false"/>
+        <parameter key="relative_error_strict" value="false"/>
+        <parameter key="normalized_absolute_error" value="false"/>
+        <parameter key="root_mean_squared_error" value="false"/>
+        <parameter key="root_relative_squared_error" value="false"/>
+        <parameter key="squared_error" value="false"/>
+        <parameter key="correlation" value="false"/>
+        <parameter key="squared_correlation" value="false"/>
+        <parameter key="cross-entropy" value="false"/>
+        <parameter key="margin" value="false"/>
+        <parameter key="soft_margin_loss" value="false"/>
+        <parameter key="logistic_loss" value="false"/>
+        <parameter key="skip_undefined_labels" value="true"/>
+        <parameter key="use_example_weights" value="true"/>
+        <list key="class_weights"/>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (5)" width="90" x="715" y="442">
+        <list key="application_parameters"/>
+      </operator>
+      <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Bagging Decision Tree" width="90" x="849" y="442">
+        <parameter key="main_criterion" value="first"/>
+        <parameter key="accuracy" value="true"/>
+        <parameter key="classification_error" value="false"/>
+        <parameter key="kappa" value="false"/>
+        <parameter key="weighted_mean_recall" value="false"/>
+        <parameter key="weighted_mean_precision" value="false"/>
+        <parameter key="spearman_rho" value="false"/>
+        <parameter key="kendall_tau" value="false"/>
+        <parameter key="absolute_error" value="false"/>
+        <parameter key="relative_error" value="false"/>
+        <parameter key="relative_error_lenient" value="false"/>
+        <parameter key="relative_error_strict" value="false"/>
+        <parameter key="normalized_absolute_error" value="false"/>
+        <parameter key="root_mean_squared_error" value="false"/>
+        <parameter key="root_relative_squared_error" value="false"/>
+        <parameter key="squared_error" value="false"/>
+        <parameter key="correlation" value="false"/>
+        <parameter key="squared_correlation" value="false"/>
+        <parameter key="cross-entropy" value="false"/>
+        <parameter key="margin" value="false"/>
+        <parameter key="soft_margin_loss" value="false"/>
+        <parameter key="logistic_loss" value="false"/>
+        <parameter key="skip_undefined_labels" value="true"/>
+        <parameter key="use_example_weights" value="true"/>
+        <list key="class_weights"/>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (4)" width="90" x="715" y="238">
+        <list key="application_parameters"/>
+      </operator>
+      <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Bagging KNN" width="90" x="849" y="238">
+        <parameter key="main_criterion" value="first"/>
+        <parameter key="accuracy" value="true"/>
+        <parameter key="classification_error" value="false"/>
+        <parameter key="kappa" value="false"/>
+        <parameter key="weighted_mean_recall" value="false"/>
+        <parameter key="weighted_mean_precision" value="false"/>
+        <parameter key="spearman_rho" value="false"/>
+        <parameter key="kendall_tau" value="false"/>
+        <parameter key="absolute_error" value="false"/>
+        <parameter key="relative_error" value="false"/>
+        <parameter key="relative_error_lenient" value="false"/>
+        <parameter key="relative_error_strict" value="false"/>
+        <parameter key="normalized_absolute_error" value="false"/>
+        <parameter key="root_mean_squared_error" value="false"/>
+        <parameter key="root_relative_squared_error" value="false"/>
+        <parameter key="squared_error" value="false"/>
+        <parameter key="correlation" value="false"/>
+        <parameter key="squared_correlation" value="false"/>
+        <parameter key="cross-entropy" value="false"/>
+        <parameter key="margin" value="false"/>
+        <parameter key="soft_margin_loss" value="false"/>
+        <parameter key="logistic_loss" value="false"/>
+        <parameter key="skip_undefined_labels" value="true"/>
+        <parameter key="use_example_weights" value="true"/>
+        <list key="class_weights"/>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (2)" width="90" x="715" y="34">
+        <list key="application_parameters"/>
+      </operator>
+      <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Vote vector" width="90" x="849" y="34">
+        <parameter key="main_criterion" value="first"/>
+        <parameter key="accuracy" value="true"/>
+        <parameter key="classification_error" value="false"/>
+        <parameter key="kappa" value="false"/>
+        <parameter key="weighted_mean_recall" value="false"/>
+        <parameter key="weighted_mean_precision" value="false"/>
+        <parameter key="spearman_rho" value="false"/>
+        <parameter key="kendall_tau" value="false"/>
+        <parameter key="absolute_error" value="false"/>
+        <parameter key="relative_error" value="false"/>
+        <parameter key="relative_error_lenient" value="false"/>
+        <parameter key="relative_error_strict" value="false"/>
+        <parameter key="normalized_absolute_error" value="false"/>
+        <parameter key="root_mean_squared_error" value="false"/>
+        <parameter key="root_relative_squared_error" value="false"/>
+        <parameter key="squared_error" value="false"/>
+        <parameter key="correlation" value="false"/>
+        <parameter key="squared_correlation" value="false"/>
+        <parameter key="cross-entropy" value="false"/>
+        <parameter key="margin" value="false"/>
+        <parameter key="soft_margin_loss" value="false"/>
+        <parameter key="logistic_loss" value="false"/>
+        <parameter key="skip_undefined_labels" value="true"/>
+        <parameter key="use_example_weights" value="true"/>
+        <list key="class_weights"/>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (13)" width="90" x="715" y="1258">
+        <list key="application_parameters"/>
+      </operator>
+      <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Performance (2)" width="90" x="849" y="1258">
+        <parameter key="main_criterion" value="first"/>
+        <parameter key="accuracy" value="true"/>
+        <parameter key="classification_error" value="false"/>
+        <parameter key="kappa" value="false"/>
+        <parameter key="weighted_mean_recall" value="false"/>
+        <parameter key="weighted_mean_precision" value="false"/>
+        <parameter key="spearman_rho" value="false"/>
+        <parameter key="kendall_tau" value="false"/>
+        <parameter key="absolute_error" value="false"/>
+        <parameter key="relative_error" value="false"/>
+        <parameter key="relative_error_lenient" value="false"/>
+        <parameter key="relative_error_strict" value="false"/>
+        <parameter key="normalized_absolute_error" value="false"/>
+        <parameter key="root_mean_squared_error" value="false"/>
+        <parameter key="root_relative_squared_error" value="false"/>
+        <parameter key="squared_error" value="false"/>
+        <parameter key="correlation" value="false"/>
+        <parameter key="squared_correlation" value="false"/>
+        <parameter key="cross-entropy" value="false"/>
+        <parameter key="margin" value="false"/>
+        <parameter key="soft_margin_loss" value="false"/>
+        <parameter key="logistic_loss" value="false"/>
+        <parameter key="skip_undefined_labels" value="true"/>
+        <parameter key="use_example_weights" value="true"/>
+        <list key="class_weights"/>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (8)" width="90" x="715" y="646">
+        <list key="application_parameters"/>
+      </operator>
+      <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Bagging Naive Bayes" width="90" x="849" y="646">
+        <parameter key="main_criterion" value="first"/>
+        <parameter key="accuracy" value="true"/>
+        <parameter key="classification_error" value="false"/>
+        <parameter key="kappa" value="false"/>
+        <parameter key="weighted_mean_recall" value="false"/>
+        <parameter key="weighted_mean_precision" value="false"/>
+        <parameter key="spearman_rho" value="false"/>
+        <parameter key="kendall_tau" value="false"/>
+        <parameter key="absolute_error" value="false"/>
+        <parameter key="relative_error" value="false"/>
+        <parameter key="relative_error_lenient" value="false"/>
+        <parameter key="relative_error_strict" value="false"/>
+        <parameter key="normalized_absolute_error" value="false"/>
+        <parameter key="root_mean_squared_error" value="false"/>
+        <parameter key="root_relative_squared_error" value="false"/>
+        <parameter key="squared_error" value="false"/>
+        <parameter key="correlation" value="false"/>
+        <parameter key="squared_correlation" value="false"/>
+        <parameter key="cross-entropy" value="false"/>
+        <parameter key="margin" value="false"/>
+        <parameter key="soft_margin_loss" value="false"/>
+        <parameter key="logistic_loss" value="false"/>
+        <parameter key="skip_undefined_labels" value="true"/>
+        <parameter key="use_example_weights" value="true"/>
+        <list key="class_weights"/>
+      </operator>
+      <operator activated="true" class="stacking" compatibility="10.1.002" expanded="true" height="68" name="Stacking (2)" width="90" x="581" y="1462">
+        <parameter key="keep_all_attributes" value="true"/>
+        <parameter key="keep_confidences" value="true"/>
+        <process expanded="true">
+          <operator activated="true" class="concurrency:parallel_decision_tree" compatibility="10.1.002" expanded="true" height="103" name="Decision Tree (6)" width="90" x="179" y="34">
+            <parameter key="criterion" value="gain_ratio"/>
+            <parameter key="maximal_depth" value="52"/>
+            <parameter key="apply_pruning" value="true"/>
+            <parameter key="confidence" value="0.1"/>
+            <parameter key="apply_prepruning" value="true"/>
+            <parameter key="minimal_gain" value="0.01"/>
+            <parameter key="minimal_leaf_size" value="2"/>
+            <parameter key="minimal_size_for_split" value="4"/>
+            <parameter key="number_of_prepruning_alternatives" value="3"/>
+          </operator>
+          <operator activated="true" class="k_nn" compatibility="10.1.002" expanded="true" height="82" name="k-NN (5)" width="90" x="179" y="136">
+            <parameter key="k" value="2"/>
+            <parameter key="weighted_vote" value="true"/>
+            <parameter key="measure_types" value="MixedMeasures"/>
+            <parameter key="mixed_measure" value="MixedEuclideanDistance"/>
+            <parameter key="nominal_measure" value="NominalDistance"/>
+            <parameter key="numerical_measure" value="EuclideanDistance"/>
+            <parameter key="divergence" value="GeneralizedIDivergence"/>
+            <parameter key="kernel_type" value="radial"/>
+            <parameter key="kernel_gamma" value="1.0"/>
+            <parameter key="kernel_sigma1" value="1.0"/>
+            <parameter key="kernel_sigma2" value="0.0"/>
+            <parameter key="kernel_sigma3" value="2.0"/>
+            <parameter key="kernel_degree" value="3.0"/>
+            <parameter key="kernel_shift" value="1.0"/>
+            <parameter key="kernel_a" value="1.0"/>
+            <parameter key="kernel_b" value="0.0"/>
+          </operator>
+          <operator activated="true" class="classification_by_regression" compatibility="10.1.002" expanded="true" height="82" name="Classification by Regression (3)" width="90" x="179" y="238">
+            <process expanded="true">
+              <operator activated="true" class="support_vector_machine" compatibility="10.1.002" expanded="true" height="124" name="SVM (3)" width="90" x="179" y="238">
+                <parameter key="kernel_type" value="dot"/>
+                <parameter key="kernel_gamma" value="1.0"/>
+                <parameter key="kernel_sigma1" value="1.0"/>
+                <parameter key="kernel_sigma2" value="0.0"/>
+                <parameter key="kernel_sigma3" value="2.0"/>
+                <parameter key="kernel_shift" value="1.0"/>
+                <parameter key="kernel_degree" value="2.0"/>
+                <parameter key="kernel_a" value="1.0"/>
+                <parameter key="kernel_b" value="0.0"/>
+                <parameter key="kernel_cache" value="200"/>
+                <parameter key="C" value="0.0"/>
+                <parameter key="convergence_epsilon" value="0.001"/>
+                <parameter key="max_iterations" value="100000"/>
+                <parameter key="scale" value="true"/>
+                <parameter key="calculate_weights" value="true"/>
+                <parameter key="return_optimization_performance" value="true"/>
+                <parameter key="L_pos" value="1.0"/>
+                <parameter key="L_neg" value="1.0"/>
+                <parameter key="epsilon" value="0.0"/>
+                <parameter key="epsilon_plus" value="0.0"/>
+                <parameter key="epsilon_minus" value="0.0"/>
+                <parameter key="balance_cost" value="false"/>
+                <parameter key="quadratic_loss_pos" value="false"/>
+                <parameter key="quadratic_loss_neg" value="false"/>
+                <parameter key="estimate_performance" value="false"/>
+              </operator>
+              <connect from_port="training set" to_op="SVM (3)" to_port="training set"/>
+              <connect from_op="SVM (3)" from_port="model" to_port="model"/>
+              <portSpacing port="source_training set" spacing="0"/>
+              <portSpacing port="sink_model" spacing="0"/>
+            </process>
+          </operator>
+          <connect from_port="training set 1" to_op="Decision Tree (6)" to_port="training set"/>
+          <connect from_port="training set 2" to_op="k-NN (5)" to_port="training set"/>
+          <connect from_port="training set 3" to_op="Classification by Regression (3)" to_port="training set"/>
+          <connect from_op="Decision Tree (6)" from_port="model" to_port="base model 1"/>
+          <connect from_op="k-NN (5)" from_port="model" to_port="base model 2"/>
+          <connect from_op="Classification by Regression (3)" from_port="model" to_port="base model 3"/>
+          <portSpacing port="source_training set 1" spacing="0"/>
+          <portSpacing port="source_training set 2" spacing="0"/>
+          <portSpacing port="source_training set 3" spacing="0"/>
+          <portSpacing port="source_training set 4" spacing="0"/>
+          <portSpacing port="sink_base model 1" spacing="0"/>
+          <portSpacing port="sink_base model 2" spacing="0"/>
+          <portSpacing port="sink_base model 3" spacing="0"/>
+          <portSpacing port="sink_base model 4" spacing="0"/>
+        </process>
+        <process expanded="true">
+          <operator activated="true" class="concurrency:parallel_random_forest" compatibility="10.1.002" expanded="true" height="103" name="Random Forest" width="90" x="112" y="34">
+            <parameter key="number_of_trees" value="80"/>
+            <parameter key="criterion" value="gain_ratio"/>
+            <parameter key="maximal_depth" value="50"/>
+            <parameter key="apply_pruning" value="false"/>
+            <parameter key="confidence" value="0.1"/>
+            <parameter key="apply_prepruning" value="false"/>
+            <parameter key="minimal_gain" value="0.01"/>
+            <parameter key="minimal_leaf_size" value="2"/>
+            <parameter key="minimal_size_for_split" value="4"/>
+            <parameter key="number_of_prepruning_alternatives" value="3"/>
+            <parameter key="random_splits" value="false"/>
+            <parameter key="guess_subset_ratio" value="true"/>
+            <parameter key="subset_ratio" value="0.2"/>
+            <parameter key="voting_strategy" value="confidence vote"/>
+            <parameter key="use_local_random_seed" value="false"/>
+            <parameter key="local_random_seed" value="1992"/>
+            <parameter key="enable_parallel_execution" value="true"/>
+          </operator>
+          <connect from_port="stacking examples" to_op="Random Forest" to_port="training set"/>
+          <connect from_op="Random Forest" from_port="model" to_port="stacking model"/>
+          <portSpacing port="source_stacking examples" spacing="0"/>
+          <portSpacing port="sink_stacking model" spacing="0"/>
+        </process>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="10.1.002" expanded="true" height="82" name="Apply Model (17)" width="90" x="715" y="1462">
+        <list key="application_parameters"/>
+      </operator>
+      <operator activated="true" class="performance_classification" compatibility="10.1.002" expanded="true" height="82" name="Stacking random forest" width="90" x="849" y="1462">
+        <parameter key="main_criterion" value="first"/>
+        <parameter key="accuracy" value="true"/>
+        <parameter key="classification_error" value="false"/>
+        <parameter key="kappa" value="false"/>
+        <parameter key="weighted_mean_recall" value="false"/>
+        <parameter key="weighted_mean_precision" value="false"/>
+        <parameter key="spearman_rho" value="false"/>
+        <parameter key="kendall_tau" value="false"/>
+        <parameter key="absolute_error" value="false"/>
+        <parameter key="relative_error" value="false"/>
+        <parameter key="relative_error_lenient" value="false"/>
+        <parameter key="relative_error_strict" value="false"/>
+        <parameter key="normalized_absolute_error" value="false"/>
+        <parameter key="root_mean_squared_error" value="false"/>
+        <parameter key="root_relative_squared_error" value="false"/>
+        <parameter key="squared_error" value="false"/>
+        <parameter key="correlation" value="false"/>
+        <parameter key="squared_correlation" value="false"/>
+        <parameter key="cross-entropy" value="false"/>
+        <parameter key="margin" value="false"/>
+        <parameter key="soft_margin_loss" value="false"/>
+        <parameter key="logistic_loss" value="false"/>
+        <parameter key="skip_undefined_labels" value="true"/>
+        <parameter key="use_example_weights" value="true"/>
+        <list key="class_weights"/>
+      </operator>
+      <connect from_op="Read CSV" from_port="output" to_op="Set Role" to_port="example set input"/>
+      <connect from_op="Set Role" from_port="example set output" to_op="Normalize" to_port="example set input"/>
+      <connect from_op="Normalize" from_port="example set output" to_op="Multiply" to_port="input"/>
+      <connect from_op="Normalize" from_port="preprocessing model" to_op="Apply Model (15)" to_port="model"/>
+      <connect from_op="Multiply" from_port="output 1" to_op="Cross Validation" to_port="example set"/>
+      <connect from_op="Multiply" from_port="output 2" to_op="Cross Validation (2)" to_port="example set"/>
+      <connect from_op="Multiply" from_port="output 3" to_op="Cross Validation (3)" to_port="example set"/>
+      <connect from_op="Multiply" from_port="output 4" to_op="Cross Validation (4)" to_port="example set"/>
+      <connect from_op="Multiply" from_port="output 5" to_op="Cross Validation (5)" to_port="example set"/>
+      <connect from_op="Multiply" from_port="output 6" to_op="Cross Validation (6)" to_port="example set"/>
+      <connect from_op="Multiply" from_port="output 7" to_op="Cross Validation (7)" to_port="example set"/>
+      <connect from_op="Multiply" from_port="output 8" to_op="Stacking (2)" to_port="training set"/>
+      <connect from_op="Cross Validation (6)" from_port="model" to_op="Apply Model (12)" to_port="model"/>
+      <connect from_op="Cross Validation (5)" from_port="model" to_op="Apply Model (10)" to_port="model"/>
+      <connect from_op="Cross Validation (4)" from_port="model" to_op="Apply Model (8)" to_port="model"/>
+      <connect from_op="Cross Validation (3)" from_port="model" to_op="Apply Model (5)" to_port="model"/>
+      <connect from_op="Cross Validation (2)" from_port="model" to_op="Apply Model (4)" to_port="model"/>
+      <connect from_op="Cross Validation (7)" from_port="model" to_op="Apply Model (13)" to_port="model"/>
+      <connect from_op="Cross Validation" from_port="model" to_op="Apply Model (2)" to_port="model"/>
+      <connect from_op="Read CSV (2)" from_port="output" to_op="Set Role (2)" to_port="example set input"/>
+      <connect from_op="Set Role (2)" from_port="example set output" to_op="Apply Model (15)" to_port="unlabelled data"/>
+      <connect from_op="Apply Model (15)" from_port="labelled data" to_op="Multiply (2)" to_port="input"/>
+      <connect from_op="Multiply (2)" from_port="output 1" to_op="Apply Model (13)" to_port="unlabelled data"/>
+      <connect from_op="Multiply (2)" from_port="output 2" to_op="Apply Model (2)" to_port="unlabelled data"/>
+      <connect from_op="Multiply (2)" from_port="output 3" to_op="Apply Model (4)" to_port="unlabelled data"/>
+      <connect from_op="Multiply (2)" from_port="output 4" to_op="Apply Model (5)" to_port="unlabelled data"/>
+      <connect from_op="Multiply (2)" from_port="output 5" to_op="Apply Model (8)" to_port="unlabelled data"/>
+      <connect from_op="Multiply (2)" from_port="output 6" to_op="Apply Model (10)" to_port="unlabelled data"/>
+      <connect from_op="Multiply (2)" from_port="output 7" to_op="Apply Model (12)" to_port="unlabelled data"/>
+      <connect from_op="Multiply (2)" from_port="output 8" to_op="Apply Model (17)" to_port="unlabelled data"/>
+      <connect from_op="Apply Model (12)" from_port="labelled data" to_op="Boosting Decision Tree" to_port="labelled data"/>
+      <connect from_op="Boosting Decision Tree" from_port="performance" to_port="result 6"/>
+      <connect from_op="Apply Model (10)" from_port="labelled data" to_op="Boosting KNN" to_port="labelled data"/>
+      <connect from_op="Boosting KNN" from_port="performance" to_port="result 5"/>
+      <connect from_op="Apply Model (5)" from_port="labelled data" to_op="Bagging Decision Tree" to_port="labelled data"/>
+      <connect from_op="Bagging Decision Tree" from_port="performance" to_port="result 3"/>
+      <connect from_op="Apply Model (4)" from_port="labelled data" to_op="Bagging KNN" to_port="labelled data"/>
+      <connect from_op="Bagging KNN" from_port="performance" to_port="result 2"/>
+      <connect from_op="Apply Model (2)" from_port="labelled data" to_op="Vote vector" to_port="labelled data"/>
+      <connect from_op="Vote vector" from_port="performance" to_port="result 1"/>
+      <connect from_op="Apply Model (13)" from_port="labelled data" to_op="Performance (2)" to_port="labelled data"/>
+      <connect from_op="Performance (2)" from_port="performance" to_port="result 7"/>
+      <connect from_op="Apply Model (8)" from_port="labelled data" to_op="Bagging Naive Bayes" to_port="labelled data"/>
+      <connect from_op="Bagging Naive Bayes" from_port="performance" to_port="result 4"/>
+      <connect from_op="Stacking (2)" from_port="model" to_op="Apply Model (17)" to_port="model"/>
+      <connect from_op="Apply Model (17)" from_port="labelled data" to_op="Stacking random forest" to_port="labelled data"/>
+      <connect from_op="Stacking random forest" from_port="performance" to_port="result 8"/>
+      <portSpacing port="source_input 1" spacing="0"/>
+      <portSpacing port="sink_result 1" spacing="0"/>
+      <portSpacing port="sink_result 2" spacing="0"/>
+      <portSpacing port="sink_result 3" spacing="0"/>
+      <portSpacing port="sink_result 4" spacing="0"/>
+      <portSpacing port="sink_result 5" spacing="0"/>
+      <portSpacing port="sink_result 6" spacing="0"/>
+      <portSpacing port="sink_result 7" spacing="0"/>
+      <portSpacing port="sink_result 8" spacing="0"/>
+      <portSpacing port="sink_result 9" spacing="0"/>
+    </process>
+  </operator>
+</process>
